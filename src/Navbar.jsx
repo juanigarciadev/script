@@ -14,16 +14,13 @@ export const Navbar = () => {
           </a>
           <div className="navLinksContainer">
             <a href="/" className="navLinks">
-              Home
-            </a>
-            <a href="/" className="navLinks">
-              About Us
+              Categories
             </a>
             <a href="/" className="navLinks">
               Products
             </a>
             <a href="/" className="navLinks">
-              Contact
+              FAQS
             </a>
           </div>
           <button className="btn">Sign in</button>
