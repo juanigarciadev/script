@@ -1,11 +1,12 @@
-import './App.css';
-import { Navbar } from "./Navbar"
+import "./App.css";
+import { Navbar } from "./Navbar";
+import { Home } from "./Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world from ReactJS!</h1>
-      <Navbar/>
+      <Navbar />
+      <Home />
     </div>
   );
 }

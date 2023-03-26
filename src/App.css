@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   color: white;
+  font-family: Roboto;
+  font-size: 15px;
+  overflow-x: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.navbarContainer {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 95vw;
+  height: 5rem;
+  background-color: #121212;
+  color: white;
+  margin-top: 20px;
+  padding: 0rem 2rem 0rem 2rem;
+  font-family: Roboto;
+  z-index: 1;
+  border-radius: 20px;
 }
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Lato/Lato-Regular.ttf);
+}
+
+.navLinks {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+.navLinks:hover {
+  color: rgb(194, 194, 194);
+}
+
+.navbarLogo {
+  height: 2rem;
+}
+
+.main {
+  width: 100vw;
+  height: 120vh;
+  background-color: #151515;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 7rem;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Roboto;
+}
+
+.btn:hover {
+  transition: 0.3s;
+  background: -moz-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  background: -webkit-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  background: linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  border: 0px;
+}
+
+.titles {
+  font-size: 4rem;
+  margin-left: 30px;
+  max-width: 45vw;
+  font-weight: bolder;
+  padding-top: 15rem;
+}
+
+.highlightText {
+  font-size: 4rem;
+  background: -webkit-linear-gradient(30deg, #391be6 0%, #ff00c3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .homeBackground {
+  height: 50rem;
+  background-image: url("./assets/lolbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+} */
