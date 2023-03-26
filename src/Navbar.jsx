@@ -12,17 +12,26 @@ export const Navbar = () => {
               alt="beyond imagination logo"
             />
           </a>
-          <div className="navLinksContainer">
-            <a href="/" className="navLinks">
-              Categories
-            </a>
-            <a href="/" className="navLinks">
-              Products
-            </a>
-            <a href="/" className="navLinks">
-              FAQS
-            </a>
-          </div>
+          <ul className="navLinksContainer">
+            <li>
+              {" "}
+              <a href="/" className="navLinks">
+                Categories
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="/" className="navLinks">
+                Products
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="/" className="navLinks">
+                FAQS
+              </a>
+            </li>
+          </ul>
           <button className="btn">Sign in</button>
         </navbar>
       </div>
