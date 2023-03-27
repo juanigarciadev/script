@@ -1,0 +1,55 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.homeButtons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.homeContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../assets/background-highlight.png");
+  background-size: cover;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.homeImage img {
+  height: 400px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  display: flex;
+  max-width: 45vw;
+  flex-wrap: wrap;
+}
+
+.titles {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.subtitles {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.highlightText {
+  margin: 0;
+  background: -webkit-linear-gradient(30deg, #391be6 0%, #ff00c3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

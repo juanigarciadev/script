@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../fonts/Inter/Inter-Variable.ttf);
+}
+
+img {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: -moz-linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
+  background: -webkit-linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
+  background: linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 10rem;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 50px;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Roboto;
+}
+
+.secondary {
+  background: -moz-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  background: -webkit-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  background: linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  border: none;
+}
+
+.btn:hover {
+  transition: 0.3s;
+  background: -moz-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  background: -webkit-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  background: linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  border: 0px;
+}

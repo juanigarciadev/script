@@ -1,0 +1,17 @@
+.counterNumber {
+  font-size: 2rem;
+}
+
+.counterSubtitles {
+  font-weight: normal;
+}
+
+.counterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  background: -webkit-linear-gradient(30deg, #391be6 0%, #ff00c3 100%);
+  text-align: center;
+  gap: 20vw;
+}
