@@ -7,8 +7,8 @@ export const Home = () => {
         <section className="homeContainer">
           <div className="titleContainer">
             <h3 className="titles">
-              Learn{" "}
-              <span className="highlightText titles">Web Development</span> at
+              Learn
+              <span className="highlightText titles"> Web Development</span> at
               the minimum price.
             </h3>
             <h4 className="subtitles">
