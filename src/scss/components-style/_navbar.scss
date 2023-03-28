@@ -42,3 +42,22 @@
 .navbarToggler {
   display: none;
 }
+
+.navbarOptionsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cartCounter {
+  font-size: 15px;
+  padding-top: 6px;
+}

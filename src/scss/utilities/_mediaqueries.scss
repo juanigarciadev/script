@@ -21,6 +21,10 @@
   .counterContainer {
     gap: 10vw;
   }
+  .socialContainer {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -38,5 +42,11 @@
   }
   .navbarToggler {
     display: block;
+  }
+  .socialContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo-icon {
+    height: 60px;
   }
 }

@@ -1,0 +1,36 @@
+.trustedTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+
+.socialContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #121212;
+  min-height: 200px;
+  width: 100vw;
+  gap: 4rem;
+}
+
+.socialLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-icon {
+  height: 80px;
+  cursor: pointer;
+}
+
+.social {
+  padding-top: 0.5rem;
+}
+
+.faIcons {
+  font-size: 20px;
+  cursor: pointer;
+}

@@ -1,5 +1,6 @@
-import logo from "./assets/beyond-imagination.png";
-import { FaBars } from "react-icons/fa";
+import logo from "../assets/beyond-imagination.png";
+import { HiOutlineBars3BottomRight } from "react-icons/hi2";
+import { BsCart3 } from "react-icons/bs";
 
 export const Navbar = () => {
   return (
@@ -36,7 +37,11 @@ export const Navbar = () => {
         </ul>
         <div className="navbarOptionsContainer">
           <button className="btn">Sign in</button>
-          <FaBars className="navbarToggler" />
+          <div className="cartContainer">
+            <BsCart3 className="faIcons" />
+            <span className="cartCounter">0</span>
+          </div>
+          <HiOutlineBars3BottomRight className="navbarToggler faIcons" />
         </div>
       </navbar>
     </div>
