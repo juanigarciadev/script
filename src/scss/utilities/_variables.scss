@@ -36,13 +36,12 @@ img {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #000;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: -moz-linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
-  background: -webkit-linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
-  background: linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
+  /* Handle on hover */
+  &:hover {
+    background: -moz-linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
+    background: -webkit-linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
+    background: linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
+  }
 }
 
 .btn {
@@ -59,6 +58,13 @@ img {
   cursor: pointer;
   text-decoration: none;
   font-family: Roboto;
+  &:hover {
+    transition: 0.3s;
+    background: -moz-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+    background: -webkit-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+    background: linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+    border: 0px;
+  }
 }
 
 .secondary {
@@ -66,14 +72,11 @@ img {
   background: -webkit-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
   background: linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
   border: none;
-}
-
-.btn:hover {
-  transition: 0.3s;
-  background: -moz-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
-  background: -webkit-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
-  background: linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
-  border: 0px;
+  &:hover {
+    background: -moz-linear-gradient(90deg, #3316d4 0%, #e702b1 100%);
+    background: -webkit-linear-gradient(90deg, #3316d4 0%, #e702b1 100%);
+    background: linear-gradient(90deg, #3316d4 0%, #e702b1 100%);
+  }
 }
 
 .smallSubtitles {

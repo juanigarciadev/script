@@ -49,4 +49,24 @@
   .logo-icon {
     height: 60px;
   }
+  .footerContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .footerDivs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 382px) {
+  .navbarOptionsContainer {
+    .btn {
+      display: none;
+    }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

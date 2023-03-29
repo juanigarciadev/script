@@ -1,0 +1,24 @@
+.footerContainer {
+  padding: 3rem 5rem 3rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: auto;
+  width: 100vw;
+  background-color: #121212;
+  justify-items: center;
+}
+
+.footerLinksContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.footerLinks {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

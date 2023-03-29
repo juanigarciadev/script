@@ -1,4 +1,4 @@
-import homeImage from "../assets/web-development.png";
+import homeImage from "../../assets/web-development.png";
 
 export const Home = () => {
   return (
