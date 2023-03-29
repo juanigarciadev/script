@@ -1,4 +1,10 @@
 @media screen and (max-width: 1199px) {
+  .full {
+    display: none;
+  }
+  .mini {
+    display: block;
+  }
   .homeContainer {
     justify-content: center;
     text-align: center;

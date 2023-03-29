@@ -1,7 +1,7 @@
 export const ItemList = ({ greetings }) => {
   return (
     <div className="ItemList">
-      <h1>{greetings}</h1>
+      <h4 className="subtitles">{greetings}</h4>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import { CartWidget } from "../CartWidget/CartWidget";
+import logoFull from "../../assets/beyond-imagination-full.png";
 import logo from "../../assets/beyond-imagination.png";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 
@@ -8,8 +9,13 @@ export const Navbar = () => {
       <div className="navbar">
         <a href="/">
           <img
+            src={logoFull}
+            className="full navbarLogo"
+            alt="beyond imagination logo"
+          />
+          <img
             src={logo}
-            className="navbarLogo"
+            className="mini navbarLogo"
             alt="beyond imagination logo"
           />
         </a>
