@@ -57,6 +57,10 @@
     display: flex;
     flex-direction: column;
   }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
 }
 
 @media screen and (max-width: 382px) {
