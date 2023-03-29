@@ -4,7 +4,7 @@ import { Home } from "./components/Home/Home";
 import { Counter } from "./components/Counter/Counter";
 import { Trusted } from "./components/Trusted/Trusted";
 import { Footer } from "./components/Footer/Footer";
-import { ItemList } from "./components/ItemList/ItemListContainer";
+import { ItemListContainer } from "./components/ItemList/ItemListContainer";
 
 function App() {
   let greetings = "Hello, welcome again!";
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
-      <ItemList greetings={greetings} />
+      <ItemListContainer greetings={greetings} />
       <Trusted />
       <Counter />
       <Footer />
