@@ -25,6 +25,18 @@
     flex-wrap: wrap;
     padding: 2rem;
   }
+  .subscribeNewsletter {
+    flex-direction: column;
+  }
+  .newsletterBtn {
+    width: 17.3rem;
+  }
+  #newsletter {
+    text-align: center;
+    padding-left: 0;
+    width: 17.3rem;
+    height: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -56,6 +68,13 @@
   .footerDivs {
     display: flex;
     flex-direction: column;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+  }
+  .divider {
+    display: none;
   }
   /* width */
   ::-webkit-scrollbar {

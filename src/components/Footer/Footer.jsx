@@ -1,9 +1,23 @@
+import { IoSendSharp } from "react-icons/io5";
+
 export const Footer = () => {
   return (
     <footer className="footerContainer">
-      <section className="footerDivs">
+      <section className="newsletter footerDivs">
         <h4 className="subtitles">Subscribe to our newsletter!</h4>
+        <div className="subscribeNewsletter">
+          <input
+            type="email"
+            placeholder="Your email here"
+            name="newsletter"
+            id="newsletter"
+          />
+          <button className="newsletterBtn">
+            Send <IoSendSharp />
+          </button>
+        </div>
       </section>
+      <div className="divider"></div>
       <section className="footerDivs">
         <section className="subtitles">
           Improving the future by working in the present

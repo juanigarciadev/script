@@ -22,3 +22,57 @@
     text-decoration: underline;
   }
 }
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.newsletterBtn {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 10rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Roboto;
+  background: -moz-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  background: -webkit-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  background: linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
+  border: none;
+  &:hover {
+    background: -moz-linear-gradient(90deg, #3316d4 0%, #e702b1 100%);
+    background: -webkit-linear-gradient(90deg, #3316d4 0%, #e702b1 100%);
+    background: linear-gradient(90deg, #3316d4 0%, #e702b1 100%);
+  }
+}
+
+.divider {
+  position: absolute;
+  right: 51vw;
+  width: 3px;
+  height: 550px;
+  background-color: #242424;
+  border-radius: 50%;
+}
+
+.subscribeNewsletter {
+  display: flex;
+  flex-direction: row;
+}
+
+#newsletter {
+  background-color: #242424;
+  border: none;
+  padding-left: 1rem;
+  width: 300px;
+  &:focus {
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+}
