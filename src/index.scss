@@ -1,8 +1,8 @@
-@use "./scss/components-style/navbar";
-@use "./scss/components-style/social";
-@use "./scss/components-style/footer";
+@use "../src/components/Navbar/navbar";
+@use "../src/components/Social/social";
+@use "../src/components/Footer/footer";
 @use "./scss/utilities/variables";
-@use "./scss/components-style/itemlistcontainer";
-@use "./scss/components-style/counter";
-@use "./scss/components-style/home";
+@use "../src/components/ItemList/itemlistcontainer";
+@use "../src/components/Counter/counter";
+@use "../src/components/Home/home";
 @use "./scss/utilities/mediaqueries";
