@@ -10,22 +10,22 @@ export const Trusted = () => {
       </section>
       <section className="socialContainer">
         <div className="socialLogoContainer">
-          <img src={githubLogo} className="logo-icon" alt="" />
+          <img src={githubLogo} className="logo-icon" alt="github logo" />
         </div>
         <div className="socialLogoContainer">
-          <img src={facebookLogo} className="logo-icon" alt="" />
+          <img src={facebookLogo} className="logo-icon" alt="facebook logo" />
         </div>
         <div className="socialLogoContainer">
-          <img src={googleLogo} className="logo-icon" alt="" />
+          <img src={googleLogo} className="logo-icon" alt="google logo" />
         </div>
         <div className="socialLogoContainer">
-          <img src={githubLogo} className="logo-icon" alt="" />
+          <img src={githubLogo} className="logo-icon" alt="github logo" />
         </div>
         <div className="socialLogoContainer">
-          <img src={facebookLogo} className="logo-icon" alt="" />
+          <img src={facebookLogo} className="logo-icon" alt="facebook logo" />
         </div>
         <div className="socialLogoContainer">
-          <img src={googleLogo} className="logo-icon" alt="" />
+          <img src={googleLogo} className="logo-icon" alt="google logo" />
         </div>
       </section>
     </>
