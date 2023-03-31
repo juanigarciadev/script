@@ -10,22 +10,46 @@ export const Trusted = () => {
       </section>
       <section className="socialContainer">
         <div className="socialLogoContainer">
-          <img src={githubLogo} className="logo-icon" alt="github logo" />
+          <img
+            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/github-logo_kzgrha.png"
+            className="logo-icon"
+            alt="github logo"
+          />
         </div>
         <div className="socialLogoContainer">
-          <img src={facebookLogo} className="logo-icon" alt="facebook logo" />
+          <img
+            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/facebook-logo_jw6ymw.png"
+            className="logo-icon"
+            alt="facebook logo"
+          />
         </div>
         <div className="socialLogoContainer">
-          <img src={googleLogo} className="logo-icon" alt="google logo" />
+          <img
+            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216083/google-logo_k0d0kt.png"
+            className="logo-icon"
+            alt="google logo"
+          />
         </div>
         <div className="socialLogoContainer">
-          <img src={githubLogo} className="logo-icon" alt="github logo" />
+          <img
+            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/github-logo_kzgrha.png"
+            className="logo-icon"
+            alt="github logo"
+          />
         </div>
         <div className="socialLogoContainer">
-          <img src={facebookLogo} className="logo-icon" alt="facebook logo" />
+          <img
+            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/facebook-logo_jw6ymw.png"
+            className="logo-icon"
+            alt="facebook logo"
+          />
         </div>
         <div className="socialLogoContainer">
-          <img src={googleLogo} className="logo-icon" alt="google logo" />
+          <img
+            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216083/google-logo_k0d0kt.png"
+            className="logo-icon"
+            alt="google logo"
+          />
         </div>
       </section>
     </>

@@ -1,5 +1,3 @@
-import homeImage from "../../assets/web-development.png";
-
 export const Home = () => {
   return (
     <>
@@ -20,7 +18,10 @@ export const Home = () => {
             </div>
           </div>
           <div className="homeImage">
-            <img src={homeImage} alt="home decoration" />
+            <img
+              src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/web-development_tat3uu.png"
+              alt="home decoration"
+            />
           </div>
         </section>
       </main>
