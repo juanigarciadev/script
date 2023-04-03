@@ -1,7 +1,40 @@
-.ItemList {
+.itemList {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: -webkit-linear-gradient(30deg, #ff00c3 0%, #391be6 100%);
   height: 200px;
+}
+
+.useStateCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.useStateBtn {
+  color: black;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 25px;
+  border-left: 1px solid rgb(208, 208, 208);
+  border-right: 1px solid rgb(208, 208, 208);
+  &:hover {
+    background-color: rgb(236, 236, 236);
+  }
+  &:disabled {
+    background-color: rgb(236, 236, 236);
+  }
+}
+
+.useStateNumber {
+  display: flex;
+  justify-content: center;
+  color: black;
+  width: 40px;
 }
