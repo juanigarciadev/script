@@ -1,6 +1,4 @@
 import { CartWidget } from "../CartWidget/CartWidget";
-import logoFull from "../../assets/beyond-imagination-full.png";
-import logo from "../../assets/beyond-imagination.png";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 
 export const Navbar = () => {
@@ -9,12 +7,12 @@ export const Navbar = () => {
       <div className="navbar">
         <a href="/">
           <img
-            src={logoFull}
+            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination-full_jxvtga.png"
             className="full navbarLogo"
             alt="beyond imagination logo"
           />
           <img
-            src={logo}
+            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination_zfxqv7.png"
             className="mini navbarLogo"
             alt="beyond imagination logo"
           />
