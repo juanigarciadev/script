@@ -22,12 +22,9 @@ export const ItemList = ({ items, sumar, restar, quantity }) => {
                 <div className="productContains">
                   <h4 className="contains">Contains</h4>
                   <ul className="containsUl">
-                    <li className="containsList">HTML</li>
-                    <li className="containsList">CSS</li>
-                    <li className="containsList">Git and Github</li>
-                    <li className="containsList">SASS</li>
-                    <li className="containsList">Bootstrap</li>
-                    <li className="containsList">Node</li>
+                    {elemento.contains.map((c) => {
+                      return <li>{c}</li>;
+                    })}
                   </ul>
                 </div>
                 <div className="productBtnContainer">

@@ -7,6 +7,7 @@ export const products = [
     description: "Learn HTML & CSS",
     category: "web-development",
     img: "https://res.cloudinary.com/diruiumfk/image/upload/v1681325472/html_css_fcykdf.png",
+    contains: ["HTML", "CSS", "Git and Github", "SASS", "Bootstrap", "Node"],
   },
   {
     id: 2,
@@ -16,6 +17,14 @@ export const products = [
     description: "Learn JavaScript",
     category: "javascript",
     img: "https://res.cloudinary.com/diruiumfk/image/upload/v1681325732/javascript_zvrrf3.png",
+    contains: [
+      "Basics",
+      "Events",
+      "Objects",
+      "Storage & JSON",
+      "Fetch",
+      "Frameworks",
+    ],
   },
   {
     id: 3,
@@ -25,5 +34,13 @@ export const products = [
     description: "Learn ReactJS",
     category: "reactjs",
     img: "https://res.cloudinary.com/diruiumfk/image/upload/v1681325731/react_w7b7ry.png",
+    contains: [
+      "Basics",
+      "JSX & Transpiling",
+      "Components",
+      "Context",
+      "Routing",
+      "Rendering",
+    ],
   },
 ];
