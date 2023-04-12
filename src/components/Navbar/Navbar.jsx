@@ -3,7 +3,7 @@ import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 
 export const Navbar = () => {
   return (
-    <navbar className="navbarContainer">
+    <div className="navbarContainer">
       <div className="navbar">
         <a href="/">
           <img
@@ -45,6 +45,6 @@ export const Navbar = () => {
           <HiOutlineBars3BottomRight className="navbarToggler faIcons" />
         </div>
       </div>
-    </navbar>
+    </div>
   );
 };

@@ -1,9 +1,19 @@
 import { ItemList } from "./ItemList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { products } from "../../productsMock";
 
 export const ItemListContainer = () => {
-  //Saludo
-  let greetings = "Hello, welcome again!";
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const itemRequest = new Promise((resolve, reject) => {
+      resolve(products);
+    });
+
+    itemRequest
+      .then((res) => setItems(res))
+      .catch((error) => console.log(error));
+  }, []);
 
   //Logica contador
   const [quantity, setQuantity] = useState(0);
@@ -16,11 +26,6 @@ export const ItemListContainer = () => {
     setQuantity(quantity - 1);
   }
   return (
-    <ItemList
-      greetings={greetings}
-      sumar={sumar}
-      restar={restar}
-      quantity={quantity}
-    />
+    <ItemList items={items} sumar={sumar} restar={restar} quantity={quantity} />
   );
 };
