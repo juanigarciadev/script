@@ -44,7 +44,9 @@ export const ItemList = ({ items, sumar, restar, quantity }) => {
                       +
                     </button>
                   </div>
-                  <button className="btn secondary">Add to cart</button>
+                  <button className="btn" disabled={elemento.stock < 1}>
+                    {elemento.stock > 0 ? "Add to Cart" : "Out of Stock"}
+                  </button>
                 </div>
               </div>
             </div>

@@ -105,7 +105,7 @@
   gap: 10px;
 }
 
-.productBtnContainer > .secondary {
+.productBtnContainer > .btn {
   width: 100%;
 }
 
@@ -115,4 +115,14 @@
 
 .containsList {
   font-weight: 100;
+}
+
+.btn:disabled {
+  cursor: auto;
+  border: 1px solid gray;
+  color: gray;
+}
+
+.btn[disabled]:hover {
+  background: transparent;
 }
