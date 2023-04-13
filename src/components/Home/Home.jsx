@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Home // BEYOND IMAGINATION";
+    document.title = "BEYOND IMAGINATION";
   }, []);
   return (
     <>

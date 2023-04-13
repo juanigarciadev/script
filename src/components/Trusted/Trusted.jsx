@@ -1,7 +1,3 @@
-import githubLogo from "../../assets/github-logo.png";
-import facebookLogo from "../../assets/facebook-logo.png";
-import googleLogo from "../../assets/google-logo.png";
-
 const Trusted = () => {
   return (
     <>
