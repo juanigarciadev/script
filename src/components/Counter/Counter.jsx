@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
-export const Counter = () => {
+const Counter = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
     <ScrollTrigger onEnter={() => setCounterOn(true)}>
@@ -56,3 +56,5 @@ export const Counter = () => {
     </ScrollTrigger>
   );
 };
+
+export default Counter;

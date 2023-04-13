@@ -2,7 +2,7 @@ import { ItemList } from "./ItemList";
 import { useEffect, useState } from "react";
 import { products } from "../../productsMock";
 
-export const ItemListContainer = () => {
+const ItemListContainer = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -29,3 +29,5 @@ export const ItemListContainer = () => {
     <ItemList items={items} sumar={sumar} restar={restar} quantity={quantity} />
   );
 };
+
+export default ItemListContainer;

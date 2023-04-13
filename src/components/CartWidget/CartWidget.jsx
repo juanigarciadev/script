@@ -5,7 +5,9 @@ export const CartWidget = () => {
     <section className="navbarOptionsContainer">
       <div className="cartContainer">
         <BsCart3 className="faIcons" />
-        <span className="cartCounter">0</span>
+        <div className="cartCounter">
+          <span>0</span>
+        </div>
       </div>
     </section>
   );

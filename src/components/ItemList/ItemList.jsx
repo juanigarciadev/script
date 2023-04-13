@@ -1,4 +1,6 @@
-export const ItemList = ({ items, sumar, restar, quantity }) => {
+import ItemCountContainer from "../ItemCount/ItemCountContainer";
+
+export const ItemList = ({ items }) => {
   //Return componente
   return (
     <section className="itemList">
@@ -23,24 +25,12 @@ export const ItemList = ({ items, sumar, restar, quantity }) => {
                   <h4 className="contains">Contains</h4>
                   <ul className="containsUl">
                     {elemento.contains.map((c) => {
-                      return <li>{c}</li>;
+                      return <li key={c}>{c}</li>;
                     })}
                   </ul>
                 </div>
                 <div className="productBtnContainer">
-                  <div className="useStateCounter">
-                    <button
-                      disabled={quantity < 1}
-                      onClick={restar}
-                      className="useStateBtn"
-                    >
-                      -
-                    </button>
-                    <h4 className="useStateNumber">{quantity}</h4>
-                    <button onClick={sumar} className="useStateBtn">
-                      +
-                    </button>
-                  </div>
+                  <ItemCountContainer stock={elemento.stock} />
                   <button className="btn" disabled={elemento.stock < 1}>
                     {elemento.stock > 0 ? "Add to Cart" : "Out of Stock"}
                   </button>

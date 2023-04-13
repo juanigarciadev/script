@@ -3,7 +3,7 @@ import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn, FaBehance } from "react-icons/fa";
 import { BsFiletypePdf } from "react-icons/bs";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="footerContainer">
       <section className="newsletter footerDivs">
@@ -159,3 +159,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

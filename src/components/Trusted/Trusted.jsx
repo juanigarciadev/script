@@ -2,7 +2,7 @@ import githubLogo from "../../assets/github-logo.png";
 import facebookLogo from "../../assets/facebook-logo.png";
 import googleLogo from "../../assets/google-logo.png";
 
-export const Trusted = () => {
+const Trusted = () => {
   return (
     <>
       <section className="trustedTitle">
@@ -55,3 +55,5 @@ export const Trusted = () => {
     </>
   );
 };
+
+export default Trusted;

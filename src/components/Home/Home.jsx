@@ -1,4 +1,9 @@
-export const Home = () => {
+import { useEffect } from "react";
+
+const Home = () => {
+  useEffect(() => {
+    document.title = "Home // BEYOND IMAGINATION";
+  }, []);
   return (
     <>
       <main className="main">
@@ -28,3 +33,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

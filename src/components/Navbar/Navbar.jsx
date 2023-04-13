@@ -1,9 +1,9 @@
 import { CartWidget } from "../CartWidget/CartWidget";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
-    <div className="navbarContainer">
+    <div className="navbarContainer prevent-select">
       <div className="navbar">
         <a href="/">
           <img
@@ -48,3 +48,5 @@ export const Navbar = () => {
     </div>
   );
 };
+
+export default Navbar;
