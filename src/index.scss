@@ -5,4 +5,7 @@
 @use "../src/components/ItemList/itemlistcontainer";
 @use "../src/components/Counter/counter";
 @use "../src/components/Home/home";
+@use "../src/components/Login/login";
+@use "../src//components/MissingPage/missingpage";
+@use "../src//components/ItemDetail/itemdetail";
 @use "./scss/utilities/mediaqueries";

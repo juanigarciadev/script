@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   background: -webkit-linear-gradient(30deg, #ff00c3 0%, #391be6 100%);
-  height: auto;
+  height: 100vh;
 }
 
 .useStateCounter {
@@ -54,7 +54,7 @@
   background-color: #121212;
   margin: 2rem 0rem;
   border-radius: 10px;
-  width: 30rem;
+  width: 32rem;
   height: 25rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px;
 }
@@ -126,4 +126,22 @@
 
 .btn[disabled]:hover {
   background: transparent;
+}
+
+.filterProds {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(18, 18, 18, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  backdrop-filter: blur(5px);
+  height: 40px;
+  width: 300px;
+  border-radius: 0px 0px 10px 10px;
+}
+.filterBtn:hover {
+  text-decoration: underline;
 }

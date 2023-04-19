@@ -4,9 +4,9 @@ import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn, FaBehance } from "react-icons/fa";
 import { useEffect } from "react";
 
-const Login = () => {
+const Register = () => {
   useEffect(() => {
-    document.title = "Log In | BEYOND IMAGINATION";
+    document.title = "Sign Up | BEYOND IMAGINATION";
   }, []);
   return (
     <section className="loginContainer">
@@ -15,7 +15,7 @@ const Login = () => {
           <BsChevronLeft />
           Go back to home
         </Link>
-        <h1 className="loginTitle">Log In to BEYOND IMAGINATION</h1>
+        <h1 className="loginTitle">Sign Up to BEYOND IMAGINATION</h1>
         <div>
           <form action="" method="get" className="loginForm">
             <input
@@ -30,11 +30,11 @@ const Login = () => {
             />
             <input
               type="button"
-              value="Log In"
+              value="Sign Up"
               className="formBtn btn secondary"
             />
             <label className="smallSubtitles">
-              Need an account? <Link to="/sign-up">Sign Up</Link>
+              Already have a account? <Link to="/sign-in">Log In</Link>
             </label>
           </form>
         </div>
@@ -42,15 +42,15 @@ const Login = () => {
           <h3 className="smallSubtitles">You can also</h3>
           <button className="loginOptionsBtn">
             <FiGithub className="faIcons" />
-            Log In with Github
+            Sign Up with Github
           </button>
           <button className="loginOptionsBtn">
             <FaLinkedinIn className="faIcons" />
-            Log In with LinkedIn
+            Sign Up with LinkedIn
           </button>
           <button className="loginOptionsBtn">
             <FaBehance className="faIcons" />
-            Log In with Behance
+            Sign Up with Behance
           </button>
         </div>
       </div>
@@ -59,4 +59,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

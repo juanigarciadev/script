@@ -1,13 +1,13 @@
 import { CartWidget } from "../CartWidget/CartWidget";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
       <div className="navbarContainer prevent-select">
         <div className="navbar">
-          <a href="/">
+          <Link to="/">
             <img
               src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination-full_jxvtga.png"
               className="full navbarLogo"
@@ -18,37 +18,31 @@ const Navbar = () => {
               className="mini navbarLogo"
               alt="beyond imagination logo"
             />
-          </a>
+          </Link>
           <ul className="navLinksContainer">
-            <li>
-              <a href="/" className="navLinks">
-                Categories
-              </a>
-            </li>
-            <li>
-              <a href="/" className="navLinks">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="/" className="navLinks">
-                FAQS
-              </a>
-            </li>
-            <li>
-              <a href="/" className="navLinks">
-                Contact
-              </a>
-            </li>
+            <Link to="/" className="navLinks">
+              Categories
+            </Link>
+            <Link to="/products" className="navLinks">
+              Products
+            </Link>
+            <Link to="/" className="navLinks">
+              FAQS
+            </Link>
+            <Link to="/" className="navLinks">
+              Contact
+            </Link>
           </ul>
           <div className="navbarOptionsContainer">
-            <button className="btn">Sign in</button>
+            <Link to="/sign-in" className="btn">
+              Log In
+            </Link>
             <CartWidget />
             <HiOutlineBars3BottomRight className="navbarToggler faIcons" />
           </div>
         </div>
       </div>
-      {Outlet}
+      <Outlet />
     </div>
   );
 };

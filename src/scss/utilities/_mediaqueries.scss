@@ -92,6 +92,12 @@
   ::-webkit-scrollbar {
     width: 0px;
   }
+  .loginContainer {
+    grid-template-columns: 1fr;
+  }
+  .backgroundImageLogin {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 382px) {

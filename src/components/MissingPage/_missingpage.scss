@@ -1,0 +1,13 @@
+.missingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  height: 100vh;
+}
+
+.missingTitle {
+  font-size: 4.5rem;
+  font-weight: bold;
+}

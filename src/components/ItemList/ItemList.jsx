@@ -1,9 +1,20 @@
-import ItemCountContainer from "../ItemCount/ItemCountContainer";
+import { Link } from "react-router-dom";
 
 export const ItemList = ({ items }) => {
   //Return componente
   return (
     <section className="itemList">
+      <div className="filterProds">
+        <Link to="/products" className="filterBtn noStyleAnchor">
+          All
+        </Link>
+        <Link to="/products/frontend" className="filterBtn noStyleAnchor">
+          Frontend
+        </Link>
+        <Link to="/products/backend" className="filterBtn noStyleAnchor">
+          Backend
+        </Link>
+      </div>
       <div className="productCardContainer">
         {items.map((elemento) => {
           return (
@@ -15,11 +26,7 @@ export const ItemList = ({ items }) => {
                 <div>
                   {" "}
                   <h3 className="productSubtitle">{elemento.title}</h3>
-                  <h4 className="productId">COD {elemento.id}</h4>
-                </div>
-                <div className="stockPrice">
-                  <h4 className="productPrice">${elemento.price}</h4>
-                  {elemento.stock > 0 ? "Stock" : "No Stock"}
+                  <h4 className="productId">Category: {elemento.category}</h4>
                 </div>
                 <div className="productContains">
                   <h4 className="contains">Contains</h4>
@@ -30,10 +37,12 @@ export const ItemList = ({ items }) => {
                   </ul>
                 </div>
                 <div className="productBtnContainer">
-                  <ItemCountContainer stock={elemento.stock} />
-                  <button className="btn" disabled={elemento.stock < 1}>
-                    {elemento.stock > 0 ? "Add to Cart" : "Out of Stock"}
-                  </button>
+                  <Link
+                    to={`/products/item-detail/${elemento.id}`}
+                    className="noStyleAnchor"
+                  >
+                    <button className="btn">More Details</button>
+                  </Link>
                 </div>
               </div>
             </div>
