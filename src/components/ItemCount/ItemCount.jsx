@@ -6,7 +6,7 @@ const ItemCount = ({ stock, sumar, restar, quantity }) => {
       </button>
       <h4 className="useStateNumber">{quantity}</h4>
       <button
-        disabled={stock < 1 || quantity === stock}
+        disabled={stock < 1 || quantity >= stock}
         onClick={sumar}
         className="useStateBtn"
       >
@@ -15,5 +15,4 @@ const ItemCount = ({ stock, sumar, restar, quantity }) => {
     </div>
   );
 };
-
 export default ItemCount;
