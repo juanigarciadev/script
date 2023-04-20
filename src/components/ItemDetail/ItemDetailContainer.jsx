@@ -9,9 +9,14 @@ const ItemDetailContainer = () => {
   const history = useNavigate();
 
   useEffect(() => {
+    document.title = product.title + " | BEYOND IMAGINATION";
+  }, [product.title]);
+
+  useEffect(() => {
     let found = products.find((prod) => prod.id === Number(id));
     setProduct(found);
   }, [id]);
+
   return (
     <div>
       <ItemDetail history={history} product={product} />

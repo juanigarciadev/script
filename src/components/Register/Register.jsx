@@ -13,7 +13,7 @@ const Register = () => {
       <div className="login">
         <Link to="/" className="subtitle goBackHome">
           <BsChevronLeft />
-          Go back to home
+          Return to home
         </Link>
         <h1 className="loginTitle">Sign Up to BEYOND IMAGINATION</h1>
         <div>

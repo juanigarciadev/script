@@ -9,6 +9,10 @@ const ItemListContainer = () => {
   const { category } = useParams();
 
   useEffect(() => {
+    document.title = "Products | BEYOND IMAGINATION";
+  }, []);
+
+  useEffect(() => {
     const filteredProds = products.filter((prod) => prod.category === category);
 
     const itemRequest = new Promise((resolve, reject) => {

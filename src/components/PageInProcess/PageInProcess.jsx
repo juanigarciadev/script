@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const PageInProcess = () => {
+  useEffect(() => {
+    document.title = "Working... | BEYOND IMAGINATION";
+  }, []);
+
   return (
     <div className="missingContainer">
       <img
