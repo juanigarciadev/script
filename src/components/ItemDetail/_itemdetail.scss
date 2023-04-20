@@ -2,15 +2,23 @@
   position: absolute;
   top: 10px;
   left: 25px;
+  background-color: #0b0b0b;
+  width: 165px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  padding-left: 5px;
+  &:hover {
+    background: -moz-linear-gradient(90deg, #3316d4 0%, #e702b1 100%);
+    background: -webkit-linear-gradient(90deg, #3316d4 0%, #e702b1 100%);
+    background: linear-gradient(90deg, #3316d4 0%, #e702b1 100%);
+  }
 }
 
 .goBackText {
   display: flex;
   align-items: center;
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 .productWrapper {

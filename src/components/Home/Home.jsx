@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -19,8 +19,12 @@ const Home = () => {
               From the comfort of your home, cancel whenever you want.
             </h4>
             <div className="homeButtons">
-              <button className="btn secondary">Subscribe!</button>
-              <button className="btn">More information</button>
+              <Link to="/sign-in" className="noStyleAnchor">
+                <button className="btn secondary">Subscribe!</button>
+              </Link>
+              <Link to="/faqs" className="noStyleAnchor">
+                <button className="btn">More information</button>
+              </Link>
             </div>
           </div>
           <div className="homeImage">

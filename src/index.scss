@@ -7,5 +7,6 @@
 @use "../src/components/Home/home";
 @use "../src/components/Login/login";
 @use "../src//components/MissingPage/missingpage";
-@use "../src//components/ItemDetail/itemdetail";
+@use "../src/components/ItemDetail/itemdetail";
+@use "../src/components/PageInProcess/pageinprocess";
 @use "./scss/utilities/mediaqueries";

@@ -24,9 +24,15 @@ export const ItemList = ({ items }) => {
               </div>
               <div className="productInfoContainer">
                 <div>
-                  {" "}
                   <h3 className="productSubtitle">{elemento.title}</h3>
-                  <h4 className="productId">Category: {elemento.category}</h4>
+                  <h4 className="productId">
+                    Category:{" "}
+                    {elemento.category.charAt(0).toUpperCase() +
+                      elemento.category.slice(1)}
+                  </h4>
+                  <h4 className="productId">
+                    {elemento.stock > 1 ? "Stock" : "No Stock"}
+                  </h4>
                 </div>
                 <div className="productContains">
                   <h4 className="contains">Contains</h4>

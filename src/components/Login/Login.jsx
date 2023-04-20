@@ -13,7 +13,7 @@ const Login = () => {
       <div className="login">
         <Link to="/" className="subtitle goBackHome">
           <BsChevronLeft />
-          Go back to home
+          Return to home
         </Link>
         <h1 className="loginTitle">Log In to BEYOND IMAGINATION</h1>
         <div>
