@@ -34,7 +34,7 @@ const Register = () => {
               className="formBtn btn secondary"
             />
             <label className="smallSubtitles">
-              Already have a account? <Link to="/sign-in">Log In</Link>
+              Already have a account? <Link to="/log-in">Log In</Link>
             </label>
           </form>
         </div>

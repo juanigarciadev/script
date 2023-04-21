@@ -31,7 +31,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <div className="navbarOptionsContainer">
-            <Link to="/sign-in" className="btn">
+            <Link to="/log-in" className="btn">
               Log In
             </Link>
             <CartWidget />

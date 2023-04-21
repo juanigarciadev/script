@@ -11,6 +11,7 @@ import Register from "./components/Register/Register";
 import MissingPage from "./components/MissingPage/MissingPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageInProcess from "./components/PageInProcess/PageInProcess";
+import Faq from "./components/Faq/Faq";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             </Route>
             <Route path="/products" element={<ItemListContainer />} />
             <Route path="/products/:category" element={<ItemListContainer />} />
-            <Route path="/faqs" element={<PageInProcess />} />
+            <Route path="/faqs" element={<Faq />} />
             <Route path="/contact" element={<PageInProcess />} />
             <Route path="/cart" element={<PageInProcess />} />
           </Route>
@@ -34,7 +35,7 @@ function App() {
             element={<ItemDetailContainer />}
           />
         </Route>
-        <Route path="/sign-in" element={<Login />} />
+        <Route path="/log-in" element={<Login />} />
         <Route path="/sign-up" element={<Register />} />
         <Route path="*" element={<MissingPage />} />
       </Routes>
