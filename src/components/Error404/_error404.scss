@@ -1,4 +1,4 @@
-.missingContainer {
+.errorContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,11 @@
   height: 100vh;
 }
 
-.missingTitle {
-  font-size: 4.5rem;
-  font-weight: bold;
+.errorLogoContainer {
+  position: absolute;
+  top: 10px;
+}
+
+.errorLogo {
+  width: 200px;
 }

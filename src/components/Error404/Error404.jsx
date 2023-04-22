@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
 
-const MissingPage = () => {
+const Error404 = () => {
   return (
-    <div className="missingContainer">
+    <div className="errorContainer">
+      <div className="errorLogoContainer">
+        <Link to="/">
+          <img
+            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination-full_jxvtga.png"
+            className="errorLogo"
+            alt="beyond imagination logo"
+          />
+        </Link>
+      </div>
       <img
         src="https://res.cloudinary.com/diruiumfk/image/upload/v1681927371/404-error-3702359-3119148_yxjlhs.webp"
         alt=""
@@ -17,4 +26,4 @@ const MissingPage = () => {
   );
 };
 
-export default MissingPage;
+export default Error404;

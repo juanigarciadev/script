@@ -6,7 +6,7 @@ import ItemListContainer from "./components/ItemList/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
-import MissingPage from "./components/MissingPage/MissingPage";
+import Error404 from "./components/Error404/Error404";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageInProcess from "./components/PageInProcess/PageInProcess";
 import Faq from "./components/Faq/Faq";
@@ -31,7 +31,7 @@ function App() {
         </Route>
         <Route path="/log-in" element={<Login />} />
         <Route path="/sign-up" element={<Register />} />
-        <Route path="*" element={<MissingPage />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
   );
