@@ -8,7 +8,7 @@ const PageInProcess = () => {
   }, []);
 
   return (
-    <div className="missingContainer">
+    <div className="errorContainer">
       <img
         src="https://res.cloudinary.com/diruiumfk/image/upload/v1681960413/under_construction_bnjqcw.png"
         alt=""
