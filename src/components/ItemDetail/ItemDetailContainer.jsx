@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { products } from "../../productsMock";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
   let { id } = useParams();
-  const history = useNavigate();
 
   useEffect(() => {
     document.title = product.title + " | BEYOND IMAGINATION";
@@ -19,7 +18,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-      <ItemDetail history={history} product={product} />
+      <ItemDetail product={product} />
     </div>
   );
 };

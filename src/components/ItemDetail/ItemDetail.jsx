@@ -1,8 +1,8 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import ItemCountContainer from "../ItemCount/ItemCountContainer";
-import { BsChevronLeft } from "react-icons/bs";
+import ReturnButtonContainer from "../ReturnButton/ReturnButtonContainer";
 
-const ItemDetail = ({ product, history }) => {
+const ItemDetail = ({ product }) => {
   return (
     <>
       <div className="productWrapper">
@@ -12,10 +12,7 @@ const ItemDetail = ({ product, history }) => {
           </div>
           <div className="productInformation">
             <div className="goBack">
-              <Link to="/products" className="goBackText">
-                <BsChevronLeft />
-                Return to products
-              </Link>
+              <ReturnButtonContainer />
             </div>
             <div>
               <h3 className="productSubtitle">{product.title}</h3>

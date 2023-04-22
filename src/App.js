@@ -2,8 +2,6 @@ import "./App.scss";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Counter from "./components/Counter/Counter";
-import Trusted from "./components/Trusted/Trusted";
 import ItemListContainer from "./components/ItemList/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import Login from "./components/Login/Login";
@@ -19,21 +17,17 @@ function App() {
       <Routes>
         <Route element={<Navbar />}>
           <Route element={<Footer />}>
-            <Route element={<Home />}>
-              <Route element={<Trusted />}>
-                <Route path="/" element={<Counter />} />
-              </Route>
-            </Route>
+            <Route path="/" element={<Home />} />
             <Route path="/products" element={<ItemListContainer />} />
             <Route path="/products/:category" element={<ItemListContainer />} />
             <Route path="/faqs" element={<Faq />} />
-            <Route path="/contact" element={<PageInProcess />} />
-            <Route path="/cart" element={<PageInProcess />} />
           </Route>
           <Route
             path="products/item-detail/:id"
             element={<ItemDetailContainer />}
           />
+          <Route path="/contact" element={<PageInProcess />} />
+          <Route path="/cart" element={<PageInProcess />} />
         </Route>
         <Route path="/log-in" element={<Login />} />
         <Route path="/sign-up" element={<Register />} />

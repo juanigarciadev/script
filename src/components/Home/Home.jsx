@@ -1,5 +1,7 @@
 import { useEffect } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Counter from "../Counter/Counter";
+import Trusted from "../Trusted/Trusted";
 
 const Home = () => {
   useEffect(() => {
@@ -35,7 +37,8 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <Outlet />
+      <Trusted />
+      <Counter />
     </>
   );
 };

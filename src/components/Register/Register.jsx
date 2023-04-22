@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { BsChevronLeft } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn, FaBehance } from "react-icons/fa";
 import { useEffect } from "react";
+import ReturnButtonContainer from "../ReturnButton/ReturnButtonContainer";
 
 const Register = () => {
   useEffect(() => {
@@ -11,10 +11,9 @@ const Register = () => {
   return (
     <section className="loginContainer">
       <div className="login">
-        <Link to="/" className="subtitle goBackHome">
-          <BsChevronLeft />
-          Return to home
-        </Link>
+        <div to="/" className=" goBackHome">
+          <ReturnButtonContainer />
+        </div>
         <h1 className="loginTitle">Sign Up to BEYOND IMAGINATION</h1>
         <div>
           <form action="" method="get" className="loginForm">
