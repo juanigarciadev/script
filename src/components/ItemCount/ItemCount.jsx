@@ -14,6 +14,7 @@ const ItemCount = ({
         <button
           disabled={quantity < 1}
           onClick={substract}
+          title="Substract items"
           className="useStateBtn"
         >
           -
@@ -22,6 +23,7 @@ const ItemCount = ({
         <button
           onClick={add}
           disabled={stock < 1 || quantity === stock}
+          title="Add items"
           className="useStateBtn"
         >
           +

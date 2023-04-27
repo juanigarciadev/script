@@ -130,6 +130,7 @@ const Footer = () => {
               className="socialCircle noStyleAnchor"
               target="_blank"
               rel="noreferrer"
+              title="Github"
             >
               <FiGithub className="faIcons" />
             </a>
@@ -138,6 +139,7 @@ const Footer = () => {
               className="socialCircle noStyleAnchor"
               target="_blank"
               rel="noreferrer"
+              title="LinkedIn"
             >
               <FaLinkedinIn className="faIcons" />
             </a>
@@ -146,6 +148,7 @@ const Footer = () => {
               className="socialCircle noStyleAnchor"
               target="_blank"
               rel="noreferrer"
+              title="Behance"
             >
               <FaBehance className="faIcons" />
             </a>
@@ -154,6 +157,7 @@ const Footer = () => {
               className="socialCircle noStyleAnchor"
               target="_blank"
               rel="noreferrer"
+              title="Curriculum Vitae"
             >
               <BsFiletypePdf className="faIcons" />
             </a>

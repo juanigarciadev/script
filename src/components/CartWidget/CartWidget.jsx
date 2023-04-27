@@ -8,7 +8,7 @@ export const CartWidget = () => {
   let total = cartTotalQuantity();
   return (
     <section className="navbarOptionsContainer">
-      <Link to="/cart" className="noStyleAnchor">
+      <Link to="/cart" className="noStyleAnchor" title="Cart">
         <div className="cartContainer">
           <BsCart3 className="faIcons" />
           <div className="cartCounter">

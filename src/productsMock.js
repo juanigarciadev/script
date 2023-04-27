@@ -39,7 +39,7 @@ export const products = [
     stock: 3,
     description:
       "React is an open source Javascript library designed to create user interfaces to make it easy to develop single page applications. It is maintained by Facebook and the free software community. In the project there are more than a thousand free developers.",
-    shortDdescription:
+    shortDescription:
       "React is an open source Javascript library designed to create user interfaces to make it easy to develop single page applications.",
     category: "frontend",
     img: "https://res.cloudinary.com/diruiumfk/image/upload/v1681325731/react_w7b7ry.png",

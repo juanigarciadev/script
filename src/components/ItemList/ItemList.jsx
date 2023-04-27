@@ -20,9 +20,13 @@ export const ItemList = ({ items }) => {
         {items.map((elemento) => {
           return (
             <div className="productCard" key={elemento.id}>
-              <div className="productImageContainer">
+              <Link
+                to={`/products/item-detail/${elemento.id}`}
+                className="productImageContainer"
+                title="More Details"
+              >
                 <img src={elemento.img} className="productImage" alt="" />
-              </div>
+              </Link>
               <div className="productInfoContainer">
                 <div>
                   <h3 className="productSubtitle">{elemento.title}</h3>
