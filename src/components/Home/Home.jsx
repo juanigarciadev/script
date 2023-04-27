@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Counter from "../Counter/Counter";
 import Trusted from "../Trusted/Trusted";
+import ItemListContainer from "../ItemList/ItemListContainer";
 
 const Home = () => {
   useEffect(() => {
@@ -37,6 +38,9 @@ const Home = () => {
           </div>
         </section>
       </main>
+      <div className="homeProductsList">
+        <ItemListContainer />
+      </div>
       <Trusted />
       <Counter />
     </>

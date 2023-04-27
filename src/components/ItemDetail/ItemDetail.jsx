@@ -1,8 +1,9 @@
 import { Outlet } from "react-router-dom";
 import ItemCountContainer from "../ItemCount/ItemCountContainer";
 import ReturnButtonContainer from "../ReturnButton/ReturnButtonContainer";
+import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
-const ItemDetail = ({ product }) => {
+const ItemDetail = ({ product, onAdd }) => {
   return (
     <>
       <div className="productWrapper">
@@ -23,13 +24,18 @@ const ItemDetail = ({ product }) => {
             </div>
             <div className="productStockPrice">
               <h4 className="productPrice">${product.price}</h4>
-              {product.stock > 0 ? "Stock" : "No Stock"}
+              {product.stock < 1 ? (
+                <h3 className="productId">
+                  {<AiFillCloseCircle fill="red" />} No Stock
+                </h3>
+              ) : (
+                <h3 className="productId">
+                  {<AiFillCheckCircle fill="yellowgreen" />} Stock
+                </h3>
+              )}
             </div>
             <div className="buyCountBtn">
-              <ItemCountContainer stock={product.stock} />
-              <button className="btn" disabled={product.stock < 1}>
-                {product.stock > 0 ? "Buy" : "Out of Stock"}
-              </button>
+              <ItemCountContainer stock={product.stock} onAdd={onAdd} />
             </div>
           </div>
         </div>

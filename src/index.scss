@@ -1,4 +1,5 @@
 @use "../src/components/Navbar/navbar";
+@use "../src/components/Cart/cart";
 @use "../src/components/Trusted/trusted";
 @use "../src/components/Footer/footer";
 @use "./scss/utilities/variables";
@@ -11,4 +12,5 @@
 @use "../src/components/Faq/faq";
 @use "../src/components/PageInProcess/pageinprocess";
 @use "../src/components/ReturnButton/returnbutton";
+@use "../src/components/ItemCount/itemcount";
 @use "./scss/utilities/mediaqueries";

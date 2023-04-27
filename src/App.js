@@ -10,29 +10,36 @@ import Error404 from "./components/Error404/Error404";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageInProcess from "./components/PageInProcess/PageInProcess";
 import Faq from "./components/Faq/Faq";
+import CartContextProvider from "./context/CartContext";
+import CartContainer from "./components/Cart/CartContainer";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route element={<Navbar />}>
-          <Route element={<Footer />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<ItemListContainer />} />
-            <Route path="/products/:category" element={<ItemListContainer />} />
-            <Route path="/faqs" element={<Faq />} />
+      <CartContextProvider>
+        <Routes>
+          <Route element={<Navbar />}>
+            <Route element={<Footer />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<ItemListContainer />} />
+              <Route
+                path="/products/:category"
+                element={<ItemListContainer />}
+              />
+              <Route path="/faqs" element={<Faq />} />
+            </Route>
+            <Route
+              path="products/item-detail/:id"
+              element={<ItemDetailContainer />}
+            />
+            <Route path="/contact" element={<PageInProcess />} />
+            <Route path="/cart" element={<CartContainer />} />
           </Route>
-          <Route
-            path="products/item-detail/:id"
-            element={<ItemDetailContainer />}
-          />
-          <Route path="/contact" element={<PageInProcess />} />
-          <Route path="/cart" element={<PageInProcess />} />
-        </Route>
-        <Route path="/log-in" element={<Login />} />
-        <Route path="/sign-up" element={<Register />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
+          <Route path="/log-in" element={<Login />} />
+          <Route path="/sign-up" element={<Register />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </CartContextProvider>
     </BrowserRouter>
   );
 }

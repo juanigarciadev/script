@@ -1,0 +1,73 @@
+.cartItemsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 10rem;
+  background-color: #121212;
+}
+
+.productAddedCartImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position-y: -173px;
+  background-position-x: center;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.productAddedCartImage {
+  width: 15vw;
+}
+
+.productAddedSubtitle {
+  color: white;
+  font-size: 30px;
+}
+
+.itemAddedCart {
+  display: grid;
+  position: relative;
+  align-items: center;
+  grid-template-columns: 20vw 40vw;
+}
+
+.itemAddedCartGrid {
+  display: flex;
+  flex-direction: column;
+}
+
+.productDivider {
+  width: 60vw;
+  margin-left: 20px;
+  opacity: 30%;
+}
+
+.prodData {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 200px;
+}
+
+.prodQuanPrice {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.prodQuanPriceDetails {
+  padding-left: 30px;
+}
+
+.cartBtn {
+  margin-top: 20px;
+}
+.deleteCartItem {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  margin-top: 150px;
+  cursor: pointer;
+}

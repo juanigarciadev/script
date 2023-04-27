@@ -90,6 +90,9 @@
 
 .productId {
   font-weight: 100;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .productPrice {
@@ -144,4 +147,16 @@
 }
 .filterBtn:hover {
   text-decoration: underline;
+}
+
+.homeProductsList {
+  .filterProds {
+    display: none;
+  }
+}
+
+.stockList {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
 export const ItemList = ({ items }) => {
   //Return componente
@@ -31,7 +32,15 @@ export const ItemList = ({ items }) => {
                       elemento.category.slice(1)}
                   </h4>
                   <h4 className="productId">
-                    {elemento.stock > 1 ? "Stock" : "No Stock"}
+                    {elemento.stock < 1 ? (
+                      <h3 className="productId">
+                        {<AiFillCloseCircle fill="red" />} No Stock
+                      </h3>
+                    ) : (
+                      <h3 className="productId">
+                        {<AiFillCheckCircle fill="yellowgreen" />} Stock
+                      </h3>
+                    )}
                   </h4>
                 </div>
                 <div className="productContains">
