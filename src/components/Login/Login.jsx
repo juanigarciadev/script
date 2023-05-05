@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { FiGithub } from "react-icons/fi";
-import { FaLinkedinIn, FaBehance } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineGoogle } from "react-icons/ai";
 import { useEffect } from "react";
-import ReturnButtonContainer from "../ReturnButton/ReturnButtonContainer";
 
 const Login = () => {
   useEffect(() => {
@@ -11,10 +11,7 @@ const Login = () => {
   return (
     <section className="loginContainer">
       <div className="login">
-        <div to="/" className=" goBackHome">
-          <ReturnButtonContainer />
-        </div>
-        <h1 className="loginTitle">Log In to BEYOND IMAGINATION</h1>
+        <h1 className="loginTitle">Log In into your account</h1>
         <div>
           <form action="" method="get" className="loginForm">
             <input
@@ -39,17 +36,17 @@ const Login = () => {
         </div>
         <div className="loginOptionsContainer">
           <h3 className="smallSubtitles">You can also</h3>
-          <button className="loginOptionsBtn">
+          <button className="loginOptionsBtn secondary">
+            <AiOutlineGoogle className="faIcons" />
+            Log In with Google
+          </button>
+          <button className="loginOptionsBtn secondary">
             <FiGithub className="faIcons" />
             Log In with Github
           </button>
-          <button className="loginOptionsBtn">
+          <button className="loginOptionsBtn secondary">
             <FaLinkedinIn className="faIcons" />
             Log In with LinkedIn
-          </button>
-          <button className="loginOptionsBtn">
-            <FaBehance className="faIcons" />
-            Log In with Behance
           </button>
         </div>
       </div>

@@ -17,53 +17,59 @@ export const ItemList = ({ items }) => {
         </Link>
       </div>
       <div className="productCardContainer">
-        {items.map((elemento) => {
+        {items.map((element) => {
           return (
-            <div className="productCard" key={elemento.id}>
+            <div className="productCard" key={element.id}>
               <Link
-                to={`/products/item-detail/${elemento.id}`}
+                to={`/products/item-detail/${element.id}`}
                 className="productImageContainer"
                 title="More Details"
               >
-                <img src={elemento.img} className="productImage" alt="" />
+                <img src={element.img} className="productImage" alt="" />
               </Link>
               <div className="productInfoContainer">
                 <div>
-                  <h3 className="productSubtitle">{elemento.title}</h3>
-                  <h4 className="productId">
+                  <h3 className="productSubtitle">{element.title}</h3>
+                  <h3 className="productId">
                     Category:{" "}
-                    {elemento.category.charAt(0).toUpperCase() +
-                      elemento.category.slice(1)}
-                  </h4>
-                  <h4 className="productId">
-                    {elemento.stock < 1 ? (
-                      <h3 className="productId">
+                    {element.category.charAt(0).toUpperCase() +
+                      element.category.slice(1)}
+                  </h3>
+                  <h3 className="productId">
+                    {element.stock < 1 ? (
+                      <p className="productId">
                         {<AiFillCloseCircle fill="red" />} No Stock
-                      </h3>
+                      </p>
                     ) : (
-                      <h3 className="productId">
-                        {<AiFillCheckCircle fill="yellowgreen" />} Stock
-                      </h3>
+                      <p className="productId">
+                        {<AiFillCheckCircle fill="yellowgreen" />} Stock:{" "}
+                        {element.stock}
+                      </p>
                     )}
-                  </h4>
+                  </h3>
                 </div>
                 <div className="productContains">
-                  <h4 className="contains">Contains</h4>
+                  <h3 className="contains">Contains</h3>
                   <ul className="containsUl">
-                    {elemento.contains.map((c) => {
+                    {element.contains.map((c) => {
                       return <li key={c}>{c}</li>;
                     })}
                   </ul>
                 </div>
                 <div className="productBtnContainer">
                   <Link
-                    to={`/products/item-detail/${elemento.id}`}
+                    to={`/products/item-detail/${element.id}`}
                     className="noStyleAnchor"
                   >
                     <button className="btn">More Details</button>
                   </Link>
                 </div>
               </div>
+              {element.new && (
+                <div className="newProduct">
+                  <h3 className="smallSubtitles">New</h3>
+                </div>
+              )}
             </div>
           );
         })}

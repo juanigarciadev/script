@@ -1,10 +1,15 @@
 import { useContext, useEffect } from "react";
 import Cart from "./Cart";
 import { CartContext } from "../../context/CartContext";
+import { useNavigate } from "react-router-dom";
 
 const CartContainer = () => {
+  const navigate = useNavigate();
+
+  // Importación de todo lo necesario del contexto global CartContext
   const { cart, clearCart, deleteProductById, getTotalPrice } =
     useContext(CartContext);
+
   useEffect(() => {
     document.title = "Cart | BEYOND IMAGINATION";
   }, []);
@@ -18,6 +23,7 @@ const CartContainer = () => {
         clearCart={clearCart}
         deleteProductById={deleteProductById}
         cartTotalPrice={cartTotalPrice}
+        navigate={navigate}
       />
     </div>
   );

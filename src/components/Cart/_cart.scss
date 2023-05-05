@@ -72,4 +72,32 @@
   bottom: 40px;
   margin-top: 150px;
   cursor: pointer;
+  &:hover {
+    fill: red;
+  }
+}
+
+.returnButtonCart {
+  position: absolute;
+  padding: 10px;
+}
+
+.cartControlContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 55vw;
+  border: 1px solid rgb(93, 93, 93);
+  padding: 0px 20px;
+  border-radius: 20px;
+  &:hover {
+    border-color: white;
+    transition: 0.2s;
+  }
+}
+
+.cartControlButtons {
+  display: flex;
+  gap: 20px;
 }

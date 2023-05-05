@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FiGithub } from "react-icons/fi";
-import { FaLinkedinIn, FaBehance } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineGoogle } from "react-icons/ai";
 import { useEffect } from "react";
 import ReturnButtonContainer from "../ReturnButton/ReturnButtonContainer";
 
@@ -14,7 +15,7 @@ const Register = () => {
         <div to="/" className=" goBackHome">
           <ReturnButtonContainer />
         </div>
-        <h1 className="loginTitle">Sign Up to BEYOND IMAGINATION</h1>
+        <h1 className="loginTitle">Create an account</h1>
         <div>
           <form action="" method="get" className="loginForm">
             <input
@@ -39,17 +40,17 @@ const Register = () => {
         </div>
         <div className="loginOptionsContainer">
           <h3 className="smallSubtitles">You can also</h3>
-          <button className="loginOptionsBtn">
+          <button className="loginOptionsBtn secondary">
+            <AiOutlineGoogle className="faIcons" />
+            Log In with Google
+          </button>
+          <button className="loginOptionsBtn secondary">
             <FiGithub className="faIcons" />
             Sign Up with Github
           </button>
-          <button className="loginOptionsBtn">
+          <button className="loginOptionsBtn secondary">
             <FaLinkedinIn className="faIcons" />
             Sign Up with LinkedIn
-          </button>
-          <button className="loginOptionsBtn">
-            <FaBehance className="faIcons" />
-            Sign Up with Behance
           </button>
         </div>
       </div>

@@ -3,7 +3,29 @@ import ItemCountContainer from "../ItemCount/ItemCountContainer";
 import ReturnButtonContainer from "../ReturnButton/ReturnButtonContainer";
 import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
-const ItemDetail = ({ product, onAdd }) => {
+const ItemDetail = ({ product, onAdd, totalQuantity }) => {
+  if (!product.img) {
+    return (
+      <div className="productWrapper">
+        <div className="productContainer">
+          <div className="productDetailImageContainer">
+            <img
+              src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination_zfxqv7.png"
+              className="contentLoader"
+              alt="content loader"
+            />
+          </div>
+          <div className="productInformation infoLoaderContainer">
+            <img
+              src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination_zfxqv7.png"
+              className="contentLoader"
+              alt="content loader"
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
     <>
       <div className="productWrapper">
@@ -17,25 +39,30 @@ const ItemDetail = ({ product, onAdd }) => {
             </div>
             <div>
               <h3 className="productSubtitle">{product.title}</h3>
-              <h4 className="productId">COD {product.id}</h4>
+              <h3 className="productId">COD {product.id}</h3>
             </div>
             <div>
               <h3 className="smallSubtitles">{product.description}</h3>
             </div>
             <div className="productStockPrice">
-              <h4 className="productPrice">${product.price}</h4>
+              <h3 className="productPrice">${product.price}</h3>
               {product.stock < 1 ? (
                 <h3 className="productId">
                   {<AiFillCloseCircle fill="red" />} No Stock
                 </h3>
               ) : (
                 <h3 className="productId">
-                  {<AiFillCheckCircle fill="yellowgreen" />} Stock
+                  {<AiFillCheckCircle fill="yellowgreen" />} Stock:{" "}
+                  {product.stock}
                 </h3>
               )}
             </div>
             <div className="buyCountBtn">
-              <ItemCountContainer stock={product.stock} onAdd={onAdd} />
+              <ItemCountContainer
+                stock={product.stock}
+                onAdd={onAdd}
+                initial={totalQuantity}
+              />
             </div>
           </div>
         </div>

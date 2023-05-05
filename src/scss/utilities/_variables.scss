@@ -62,7 +62,6 @@ img {
   -ms-user-select: none;
   user-select: none;
   &:hover {
-    transition: 0.3s;
     background: -moz-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
     background: -webkit-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
     background: linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
@@ -91,6 +90,10 @@ img {
 
 .noStyleAnchor {
   text-decoration: none;
+}
+
+.marginBottom {
+  margin-bottom: 20px;
 }
 
 .prevent-select {

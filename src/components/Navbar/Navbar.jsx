@@ -19,9 +19,15 @@ const Navbar = () => {
               alt="beyond imagination logo"
             />
           </Link>
-          <ul className="navLinksContainer">
+          <nav className="navLinksContainer">
             <Link to="/products" className="navLinks">
-              Products
+              All Products
+            </Link>
+            <Link to="/products/frontend" className="navLinks">
+              Frontend
+            </Link>
+            <Link to="/products/backend" className="navLinks">
+              Backend
             </Link>
             <Link to="/faqs" className="navLinks">
               FAQS
@@ -29,7 +35,7 @@ const Navbar = () => {
             <Link to="/contact" className="navLinks">
               Contact
             </Link>
-          </ul>
+          </nav>
           <div className="navbarOptionsContainer">
             <Link to="/log-in" className="btn">
               Log In

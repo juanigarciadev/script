@@ -1,4 +1,3 @@
-import "./App.scss";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -12,6 +11,7 @@ import PageInProcess from "./components/PageInProcess/PageInProcess";
 import Faq from "./components/Faq/Faq";
 import CartContextProvider from "./context/CartContext";
 import CartContainer from "./components/Cart/CartContainer";
+import FormCheckoutContainer from "./components/FormCheckout/FormCheckoutContainer";
 
 function App() {
   return (
@@ -33,10 +33,11 @@ function App() {
               element={<ItemDetailContainer />}
             />
             <Route path="/contact" element={<PageInProcess />} />
+            <Route path="/log-in" element={<Login />} />
+            <Route path="/sign-up" element={<Register />} />
             <Route path="/cart" element={<CartContainer />} />
+            <Route path="/checkout" element={<FormCheckoutContainer />} />
           </Route>
-          <Route path="/log-in" element={<Login />} />
-          <Route path="/sign-up" element={<Register />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </CartContextProvider>

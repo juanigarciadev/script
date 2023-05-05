@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import ItemCount from "./ItemCount";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const ItemCountContainer = ({ stock, onAdd }) => {
+const ItemCountContainer = ({ stock, onAdd, initial = 1 }) => {
   //Logica contador
   const [quantity, setQuantity] = useState(0);
 
@@ -19,6 +19,10 @@ const ItemCountContainer = ({ stock, onAdd }) => {
       progress: undefined,
       theme: "dark",
     });
+
+  useEffect(() => {
+    setQuantity(initial);
+  }, [initial]);
 
   function add() {
     quantity < stock ? setQuantity(quantity + 1) : alert("Stock máximo");

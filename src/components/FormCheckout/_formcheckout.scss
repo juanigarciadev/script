@@ -1,0 +1,112 @@
+.checkoutContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 200px;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+  padding: 100px;
+  overflow: hidden;
+}
+
+.nameEmailForm {
+  display: flex;
+  gap: 10px;
+}
+
+.checkoutFieldsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formsLarge {
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 615px;
+  margin: 5px 2px;
+  padding: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: initial;
+  -moz-appearance: textfield;
+}
+
+.checkoutBtn {
+  width: 615px;
+  border-radius: 10px;
+  background: #ff00c3;
+  font-weight: 600;
+  &:hover {
+    background: #e701b1;
+  }
+  &:disabled {
+    border: none;
+    background: transparent;
+    border: 1px solid gray;
+    color: rgb(217, 217, 217);
+    &:hover {
+      border: 1px solid gray;
+    }
+  }
+}
+
+.yourOrderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgb(93, 93, 93);
+  padding: 0px 20px;
+  border-radius: 10px;
+}
+
+.yourOrder {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.orderImg {
+  width: 100px;
+}
+
+.marginForms {
+  margin-top: 50px;
+}
+
+.orderIdContainer {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.totalPriceOrder {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.copyIcon {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 770px;
+  &:hover {
+    fill: #ff00c3;
+  }
+}

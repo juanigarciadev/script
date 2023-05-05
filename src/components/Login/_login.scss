@@ -38,12 +38,13 @@
 .forms {
   height: 40px;
   width: 300px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid gray;
   background-color: transparent;
+  padding: 20px;
+  margin: 5px 2px;
   &:hover {
     border: 1px solid;
-    border-color: linear-gradient(0deg, #391be6 0%, #ff00c3 100%);
   }
 }
 
@@ -64,7 +65,6 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border: 1px solid gray;
   border-radius: 20px;
   height: 40px;
   width: 300px;
@@ -73,13 +73,6 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  &:hover {
-    transition: 0.3s;
-    background: -moz-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
-    background: -webkit-linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
-    background: linear-gradient(90deg, #391be6 0%, #ff00c3 100%);
-    border: 0px;
-  }
 }
 
 .backgroundImageLogin {
@@ -87,8 +80,4 @@
   background-size: cover;
   background-position: 75%;
   background-repeat: no-repeat;
-}
-
-::placeholder {
-  padding-left: 20px;
 }

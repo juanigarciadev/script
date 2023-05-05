@@ -37,6 +37,10 @@
   .newsletterBtn {
     width: 17.3rem;
   }
+  .checkoutContainer {
+    grid-template-columns: 1fr 200px;
+    padding: 50px;
+  }
   #newsletter {
     text-align: center;
     padding-left: 0;
@@ -97,6 +101,16 @@
   }
   .backgroundImageLogin {
     display: none;
+  }
+  .checkoutContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .yourOrderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
