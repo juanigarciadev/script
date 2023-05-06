@@ -69,8 +69,12 @@ const FormCheckoutContainer = () => {
         .email("This field must be an valid email")
         .required("This field is required"),
       country: Yup.string().required("This field is required"),
-      postalCode: Yup.number().required("This field is required"),
-      phone: Yup.number().required("This field is required"),
+      postalCode: Yup.number("This field must be an number").required(
+        "This field is required"
+      ),
+      phone: Yup.number("This field must be an number").required(
+        "This field is required"
+      ),
     }),
     validateOnChange: false,
   });

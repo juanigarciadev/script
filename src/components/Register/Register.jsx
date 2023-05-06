@@ -42,7 +42,7 @@ const Register = () => {
           <h3 className="smallSubtitles">You can also</h3>
           <button className="loginOptionsBtn secondary">
             <AiOutlineGoogle className="faIcons" />
-            Log In with Google
+            Sign In with Google
           </button>
           <button className="loginOptionsBtn secondary">
             <FiGithub className="faIcons" />

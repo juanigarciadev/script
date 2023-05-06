@@ -57,7 +57,7 @@ const FormCheckout = ({
                   InputLabelProps={{
                     style: {
                       color: "white",
-                      "& label.Mui-focused": {
+                      "& label.MuiFocused": {
                         color: "white",
                       },
                     },
@@ -151,14 +151,16 @@ const FormCheckout = ({
                   },
                 }}
               />
-              <input
+              <button
                 type="submit"
                 value={
                   cart.length > 0 ? "Checkout" : "You can't buy nothing itself"
                 }
                 disabled={cart.length === 0}
                 className="checkoutBtn btn secondary"
-              />
+              >
+                Checkout
+              </button>
             </form>
           </div>
           <div>
@@ -167,8 +169,8 @@ const FormCheckout = ({
               {cart.length > 0 ? (
                 cart.map((product) => {
                   return (
-                    <>
-                      <div className="yourOrder" key={product.id}>
+                    <div key={product.id}>
+                      <div className="yourOrder">
                         <h3 className="smallSubtitles">
                           {" "}
                           {product.title} x{product.quantity}
@@ -183,7 +185,7 @@ const FormCheckout = ({
                           ${getTotalPrice()}
                         </h3>
                       </div>
-                    </>
+                    </div>
                   );
                 })
               ) : (
