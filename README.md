@@ -56,7 +56,7 @@ npm start
 ══════════════════════════════════════════════════════
 </p>
 
-### Para usar este proyecto se necesitan las siguientes variables de entorno pero antes deberás crear el archivo .env y asignarle lo siguiente:
+### Para usar este proyecto con productos propios se necesitan variables de entorno, para ello, se deberá crear el archivo .env en la ruta raíz del proyecto y asignarle lo siguiente:
 
 - REACT_APP_APIKEY=
 - REACT_APP_AUTHDOMAIN=
@@ -64,6 +64,24 @@ npm start
 - REACT_APP_STORAGEBUCKET=
 - REACT_APP_MESSAGINGSENDERID=
 - REACT_APP_APPID=
+
+<p align="center">
+══════════════════════════════════════════════════════
+</p>
+
+### Sintaxis para la correcta creación de productos:
+
+Los productos deberán contener las siguientes propiedades creandolas en Firebase dentro de una colección llamada "products". La ID del documento (producto) dentro de la colección tiene que ser generada automáticamente por Firebase.
+
+- title: (string, nombre del producto, se admiten mayúsculas).
+- category: (string, frontend o backend, no se admiten mayusculas).
+- img: (string, url de la foto del producto, preferentemente subida a [Cloudinary](https://cloudinary.com/)).
+- description: (string, descripción oficial del producto).
+- shortDescription: (string, misma descripción que la primera pero acortada para su vista en el carrito).
+- contains: (array, mínimo y máximo 5 temas o características del producto).
+- new: (boolean, en true saldría una etiqueta de "New" en la card del producto, en false no saldría nada).
+- price: (number, precio del producto)
+- stock: (number, stock disponible del producto)
 
 <p align="center">
  <img width="50px" src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination_zfxqv7.png" alt="BEYOND IMAGINATION Logo Mini"/>
