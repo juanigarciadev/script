@@ -98,6 +98,23 @@ const FormCheckout = ({
                   },
                 }}
               />
+              <TextField
+                id="outlined-basic"
+                label="Confirm E-mail"
+                variant="outlined"
+                name="confirmEmail"
+                placeholder="Confirm E-mail"
+                onChange={handleChange}
+                error={errors.confirmEmail ? true : false}
+                helperText={errors.confirmEmail}
+                sx={{ width: "615px" }}
+                color="secondary"
+                InputLabelProps={{
+                  style: {
+                    color: "white",
+                  },
+                }}
+              />
               <div className="nameEmailForm">
                 <TextField
                   id="outlined-basic"

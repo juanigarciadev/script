@@ -5,10 +5,7 @@ import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-
-useEffect(() => {
-  document.title = "FAQS | BEYOND IMAGINATION";
-}, []);
+import { useEffect } from "react";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -50,6 +47,10 @@ export default function Faq() {
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
+
+  useEffect(() => {
+    document.title = "FAQS | BEYOND IMAGINATION";
+  }, []);
 
   return (
     <div className="faqContainer">

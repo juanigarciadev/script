@@ -51,6 +51,7 @@ const FormCheckoutContainer = () => {
       firstName: "",
       lastName: "",
       email: "",
+      confirmEmail: "",
       country: "",
       postalCode: null,
       phone: null,
@@ -75,6 +76,9 @@ const FormCheckoutContainer = () => {
       phone: Yup.number("This field must be an number").required(
         "This field is required"
       ),
+      confirmEmail: Yup.string()
+        .required("This field is required")
+        .oneOf([Yup.ref("email")], "The e-mails do not match"),
     }),
     validateOnChange: false,
   });

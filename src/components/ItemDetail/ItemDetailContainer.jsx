@@ -7,6 +7,7 @@ import { getDoc, collection, doc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
+  const [productNotFound, setProductNotFound] = useState("");
   let { id } = useParams();
   const { addToCart, cart, getQuantityById } = useContext(CartContext);
 
@@ -24,10 +25,12 @@ const ItemDetailContainer = () => {
     const docRef = doc(itemCollection, id);
     getDoc(docRef)
       .then((res) =>
-        setProduct({
-          ...res.data(),
-          id: res.id,
-        })
+        res.data()
+          ? setProduct({
+              ...res.data(),
+              id: res.id,
+            })
+          : setProductNotFound("Product not found")
       )
       .catch((err) => console.log(err));
   }, [id]);
@@ -49,6 +52,7 @@ const ItemDetailContainer = () => {
         onAdd={onAdd}
         cart={cart}
         totalQuantity={totalQuantity}
+        productNotFound={productNotFound}
       />
     </div>
   );

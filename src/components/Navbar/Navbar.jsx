@@ -1,8 +1,9 @@
 import { CartWidget } from "../CartWidget/CartWidget";
+import { HiChevronUp } from "react-icons/hi";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { Outlet, Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ open, setOpen, menuRef, dropdownRef }) => {
   return (
     <div>
       <div className="navbarContainer prevent-select">
@@ -20,15 +21,14 @@ const Navbar = () => {
             />
           </Link>
           <nav className="navLinksContainer">
-            <Link to="/products" className="navLinks">
-              All Products
-            </Link>
-            <Link to="/products/frontend" className="navLinks">
-              Frontend
-            </Link>
-            <Link to="/products/backend" className="navLinks">
-              Backend
-            </Link>
+            <p
+              className="navLinks"
+              ref={dropdownRef}
+              onClick={() => setOpen(!open)}
+            >
+              Categories
+              <HiChevronUp />
+            </p>
             <Link to="/faqs" className="navLinks">
               FAQS
             </Link>
@@ -44,6 +44,33 @@ const Navbar = () => {
             <HiOutlineBars3BottomRight className="navbarToggler faIcons" />
           </div>
         </div>
+        {open && (
+          <div className="categoriesContainer" ref={menuRef}>
+            <ul>
+              <Link
+                to="/products"
+                className="navLinksExpanded"
+                onClick={() => setOpen(false)}
+              >
+                All Products
+              </Link>
+              <Link
+                to="/products/frontend"
+                className="navLinksExpanded"
+                onClick={() => setOpen(false)}
+              >
+                Frontend
+              </Link>
+              <Link
+                to="/products/backend"
+                className="navLinksExpanded"
+                onClick={() => setOpen(false)}
+              >
+                Backend
+              </Link>
+            </ul>
+          </div>
+        )}
       </div>
       <Outlet />
     </div>

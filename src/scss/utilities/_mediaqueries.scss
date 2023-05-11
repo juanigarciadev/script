@@ -24,6 +24,9 @@
   .homeButtons {
     justify-content: center;
   }
+  .categoriesContainer {
+    right: 53vw;
+  }
   .counterContainer {
     gap: 10vw;
   }
@@ -51,6 +54,9 @@
 
 @media screen and (max-width: 750px) {
   .navLinks {
+    display: none;
+  }
+  .categoriesContainer {
     display: none;
   }
   .homeButtons {

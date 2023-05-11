@@ -1,5 +1,5 @@
 import Home from "./components/Home/Home";
-import Navbar from "./components/Navbar/Navbar";
+import NavbarContainer from "./components/Navbar/NavbarContainer";
 import Footer from "./components/Footer/Footer";
 import ItemListContainer from "./components/ItemList/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <CartContextProvider>
         <Routes>
-          <Route element={<Navbar />}>
+          <Route element={<NavbarContainer />}>
             <Route element={<Footer />}>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<ItemListContainer />} />
@@ -29,7 +29,7 @@ function App() {
               <Route path="/faqs" element={<Faq />} />
             </Route>
             <Route
-              path="products/item-detail/:id"
+              path="/products/item-detail/:id"
               element={<ItemDetailContainer />}
             />
             <Route path="/contact" element={<PageInProcess />} />
