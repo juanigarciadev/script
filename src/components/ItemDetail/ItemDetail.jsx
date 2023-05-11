@@ -79,7 +79,7 @@ const ItemDetail = ({ product, onAdd, totalQuantity, productNotFound }) => {
         <div className="productContainer">
           <div className="productDetailImageContainer">
             <img
-              src="https:res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination_zfxqv7.png"
+              src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination_zfxqv7.png"
               className="navbarLogo"
               alt="content loader"
             />
@@ -89,7 +89,7 @@ const ItemDetail = ({ product, onAdd, totalQuantity, productNotFound }) => {
               <ReturnButtonContainer />
             </div>
             <div>
-              <p className="subtitles"> {productNotFound} </p>
+              <p className="subtitles">{productNotFound}</p>
             </div>
           </div>
         </div>
