@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import ItemCountContainer from "../ItemCount/ItemCountContainer";
 import ReturnButtonContainer from "../ReturnButton/ReturnButtonContainer";
 import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
@@ -90,6 +90,9 @@ const ItemDetail = ({ product, onAdd, totalQuantity, productNotFound }) => {
             </div>
             <div>
               <p className="subtitles">{productNotFound}</p>
+              <Link to="/products" className="btn">
+                Go to products
+              </Link>
             </div>
           </div>
         </div>
