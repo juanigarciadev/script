@@ -196,12 +196,6 @@ const FormCheckout = ({
                           ${product.quantity * product.price}
                         </h3>
                       </div>
-                      <div className="totalPriceOrder">
-                        <h3 className="subtitles">Total:</h3>
-                        <h3 className="subtitles productPrice">
-                          ${getTotalPrice()}
-                        </h3>
-                      </div>
                     </div>
                   );
                 })
@@ -215,6 +209,10 @@ const FormCheckout = ({
                   </Link>
                 </div>
               )}
+              <div className="totalPriceOrder">
+                <h3 className="subtitles">Total:</h3>
+                <h3 className="subtitles productPrice">${getTotalPrice()}</h3>
+              </div>
             </section>
           </div>
         </section>

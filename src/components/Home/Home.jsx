@@ -22,7 +22,7 @@ const Home = () => {
               From the comfort of your home, cancel whenever you want.
             </h4>
             <div className="homeButtons">
-              <Link to="/sign-in" className="noStyleAnchor">
+              <Link to="/log-in" className="noStyleAnchor">
                 <button className="btn secondary">Subscribe!</button>
               </Link>
               <Link to="/faqs" className="noStyleAnchor">
