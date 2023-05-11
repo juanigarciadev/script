@@ -1,5 +1,3 @@
-import { Outlet } from "react-router-dom";
-
 const Trusted = () => {
   return (
     <>
@@ -29,7 +27,6 @@ const Trusted = () => {
           />
         </div>
       </section>
-      <Outlet />
     </>
   );
 };

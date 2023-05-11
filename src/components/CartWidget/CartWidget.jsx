@@ -1,11 +1,7 @@
 import { BsCart3 } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { CartContext } from "../../context/CartContext";
 
-export const CartWidget = () => {
-  const { cartTotalQuantity } = useContext(CartContext);
-  let total = cartTotalQuantity();
+export const CartWidget = ({ total }) => {
   return (
     <section className="navbarOptionsContainer">
       <Link to="/cart" className="noStyleAnchor" title="Cart">

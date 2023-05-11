@@ -1,4 +1,4 @@
-import { CartWidget } from "../CartWidget/CartWidget";
+import CartWidgetContainer from "../CartWidget/CartWidgetContainer";
 import { HiChevronUp } from "react-icons/hi";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { Outlet, Link } from "react-router-dom";
@@ -40,7 +40,7 @@ const Navbar = ({ open, setOpen, menuRef, dropdownRef }) => {
             <Link to="/log-in" className="btn">
               Log In
             </Link>
-            <CartWidget />
+            <CartWidgetContainer />
             <HiOutlineBars3BottomRight className="navbarToggler faIcons" />
           </div>
         </div>

@@ -2,13 +2,9 @@ import { Link } from "react-router-dom";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineGoogle } from "react-icons/ai";
-import { useEffect } from "react";
 import ReturnButtonContainer from "../ReturnButton/ReturnButtonContainer";
 
 const Register = () => {
-  useEffect(() => {
-    document.title = "Sign Up | BEYOND IMAGINATION";
-  }, []);
   return (
     <section className="loginContainer">
       <div className="login">
