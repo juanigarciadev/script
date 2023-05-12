@@ -3,7 +3,14 @@ import { HiChevronUp } from "react-icons/hi";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { Outlet, Link } from "react-router-dom";
 
-const Navbar = ({ open, setOpen, menuRef, dropdownRef }) => {
+const Navbar = ({
+  open,
+  setOpen,
+  menuRef,
+  dropdownRef,
+  mobileNavbar,
+  setMobileNavbar,
+}) => {
   return (
     <div>
       <div className="navbarContainer prevent-select">
@@ -41,7 +48,10 @@ const Navbar = ({ open, setOpen, menuRef, dropdownRef }) => {
               Log In
             </Link>
             <CartWidgetContainer />
-            <HiOutlineBars3BottomRight className="navbarToggler faIcons" />
+            <HiOutlineBars3BottomRight
+              className="navbarToggler faIcons"
+              onClick={() => setMobileNavbar(!mobileNavbar)}
+            />
           </div>
         </div>
         {open && (
@@ -69,6 +79,22 @@ const Navbar = ({ open, setOpen, menuRef, dropdownRef }) => {
                 Backend
               </Link>
             </ul>
+          </div>
+        )}
+
+        {mobileNavbar && (
+          <div className="mobileNavbarToggled">
+            <nav className="navLinksContainerToggled">
+              <Link to="/products" className="navLinksToggled">
+                Products
+              </Link>
+              <Link to="/faqs" className="navLinksToggled">
+                FAQS
+              </Link>
+              <Link to="/contact" className="navLinksToggled">
+                Contact
+              </Link>
+            </nav>
           </div>
         )}
       </div>

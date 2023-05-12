@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 
 const NavbarContainer = () => {
   const [open, setOpen] = useState(false);
+  const [mobileNavbar, setMobileNavbar] = useState(false);
   const menuRef = useRef();
   const dropdownRef = useRef();
   window.addEventListener("click", (e) => {
@@ -10,12 +11,15 @@ const NavbarContainer = () => {
       setOpen(false);
     }
   });
+
   return (
     <Navbar
       open={open}
       setOpen={setOpen}
       menuRef={menuRef}
       dropdownRef={dropdownRef}
+      mobileNavbar={mobileNavbar}
+      setMobileNavbar={setMobileNavbar}
     />
   );
 };

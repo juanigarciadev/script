@@ -123,3 +123,44 @@
     width: 100px;
   }
 }
+
+.mobileNavbarToggled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  width: 300px;
+  height: 88vh;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navLinksContainerToggled {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navLinksToggled {
+  text-decoration: none;
+}
+
+.mobileNavbarToggled {
+  -webkit-animation: toggleNavbar 0.2s linear;
+  -moz-animation: toggleNavbar 0.2s linear;
+  animation: toggleNavbar 0.2s linear;
+}
+
+@keyframes toggleNavbar {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}

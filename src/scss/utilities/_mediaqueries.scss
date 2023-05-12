@@ -1,3 +1,9 @@
+@media screen and (max-width: 3840px) {
+  .mobileNavbarToggled {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .full {
     display: none;
@@ -130,6 +136,9 @@
   }
   .itemListImageMobile {
     height: 350px;
+  }
+  .mobileNavbarToggled {
+    display: flex;
   }
 }
 
