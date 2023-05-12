@@ -131,7 +131,7 @@
   position: fixed;
   right: 20px;
   width: 300px;
-  height: 88vh;
+  height: 85vh;
   margin-top: 10px;
   border-radius: 20px;
   background-color: rgba(18, 18, 18, 0.8);
@@ -151,9 +151,9 @@
 }
 
 .mobileNavbarToggled {
-  -webkit-animation: toggleNavbar 0.2s linear;
-  -moz-animation: toggleNavbar 0.2s linear;
-  animation: toggleNavbar 0.2s linear;
+  -webkit-animation: toggleNavbar 0.1s linear;
+  -moz-animation: toggleNavbar 0.1s linear;
+  animation: toggleNavbar 0.1s linear;
 }
 
 @keyframes toggleNavbar {

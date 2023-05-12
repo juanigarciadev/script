@@ -59,6 +59,9 @@
 }
 
 @media screen and (max-width: 750px) {
+  .navbar {
+    margin-top: 87vh;
+  }
   .navLinks {
     display: none;
   }
@@ -82,7 +85,8 @@
     display: block;
   }
   .socialContainer {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
   }
   .logo-icon {
     height: 60px;
@@ -124,6 +128,9 @@
     flex-direction: column;
     justify-content: center;
   }
+  .productCardContainer {
+    margin: 30px;
+  }
   .productContainer {
     display: flex;
     flex-direction: column;
@@ -139,6 +146,9 @@
   }
   .mobileNavbarToggled {
     display: flex;
+  }
+  .underConstruction {
+    height: 20vh;
   }
 }
 
