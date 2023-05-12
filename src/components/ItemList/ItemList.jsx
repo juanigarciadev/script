@@ -25,7 +25,11 @@ export const ItemList = ({ items }) => {
                 className="productImageContainer"
                 title="More Details"
               >
-                <img src={element.img} className="productImage" alt="" />
+                <img
+                  src={element.img}
+                  className="productImage itemListImageMobile"
+                  alt=""
+                />
               </Link>
               <div className="productInfoContainer">
                 <div>
