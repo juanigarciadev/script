@@ -20,7 +20,7 @@ const FormCheckout = ({
       {orderId ? (
         <div className="orderIdContainer">
           <h1 className="titles highlightText">Payment made successfully.</h1>
-          <h3 className="smallSubtitles">
+          <h3 className="smallSubtitles idText">
             Your purchase ID is: {orderId}{" "}
             <RiFileCopyLine
               className="copyIcon"
@@ -29,7 +29,7 @@ const FormCheckout = ({
                 copy(orderId);
               }}
             >
-              COPY
+              Copy to clipboard
             </RiFileCopyLine>
           </h3>
         </div>

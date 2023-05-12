@@ -104,8 +104,6 @@ input[type="number"] {
 .copyIcon {
   cursor: pointer;
   font-size: 20px;
-  position: absolute;
-  right: 770px;
   &:hover {
     fill: #ff00c3;
   }
@@ -113,4 +111,8 @@ input[type="number"] {
 
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
   color: white !important;
+}
+.idText {
+  display: flex;
+  gap: 5px;
 }
