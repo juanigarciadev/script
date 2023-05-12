@@ -85,13 +85,25 @@ const Navbar = ({
         {mobileNavbar && (
           <div className="mobileNavbarToggled">
             <nav className="navLinksContainerToggled">
-              <Link to="/products" className="navLinksToggled">
+              <Link
+                to="/products"
+                className="navLinksToggled"
+                onClick={() => setMobileNavbar(false)}
+              >
                 Products
               </Link>
-              <Link to="/faqs" className="navLinksToggled">
+              <Link
+                to="/faqs"
+                className="navLinksToggled"
+                onClick={() => setMobileNavbar(false)}
+              >
                 FAQS
               </Link>
-              <Link to="/contact" className="navLinksToggled">
+              <Link
+                to="/contact"
+                className="navLinksToggled"
+                onClick={() => setMobileNavbar(false)}
+              >
                 Contact
               </Link>
             </nav>
