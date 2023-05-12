@@ -118,6 +118,16 @@
     flex-direction: column;
     justify-content: center;
   }
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .productDetailImageContainer {
+    width: 400px;
+  }
+  .productImage {
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 382px) {
