@@ -23,12 +23,13 @@ export const ItemList = ({ items }) => {
               <Link
                 to={`/products/item-detail/${element.id}`}
                 className="productImageContainer"
+                draggable="false"
                 title="More Details"
               >
                 <img
                   src={element.img}
                   className="productImage itemListImageMobile"
-                  alt=""
+                  alt="product image"
                 />
               </Link>
               <div className="productInfoContainer">

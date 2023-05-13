@@ -106,8 +106,10 @@
   background-color: rgba(18, 18, 18, 0.8);
   backdrop-filter: blur(5px);
   z-index: 1;
-  border: 1px solid gray;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-animation: openCategories 0.1s linear;
+  -moz-animation: openCategories 0.1s linear;
+  animation: openCategories 0.1s linear;
 }
 
 .navLinksExpanded {
@@ -159,8 +161,21 @@
 @keyframes toggleNavbar {
   0% {
     -webkit-transform: translateX(100%);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes openCategories {
+  0% {
+    -webkit-transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    opacity: 1;
   }
 }

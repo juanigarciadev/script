@@ -2,7 +2,7 @@ import { IoSendSharp } from "react-icons/io5";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn, FaBehance } from "react-icons/fa";
 import { BsFiletypePdf } from "react-icons/bs";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,22 +20,19 @@ const Footer = () => {
             Company
             <ul className="footerLinksContainer">
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Works
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Brand
-                </a>
+                </Link>
               </li>
             </ul>
           </section>
@@ -43,34 +40,29 @@ const Footer = () => {
             Resources
             <ul className="footerLinksContainer">
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Support
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Opinions
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Creators
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Benefits
-                </a>
+                </Link>
               </li>
             </ul>
           </section>
@@ -78,34 +70,29 @@ const Footer = () => {
             Policy
             <ul className="footerLinksContainer">
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Privacity
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Cookies settings
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Licences
-                </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <a href="/" className="smallSubtitles footerLinks">
+                <Link to="/" className="smallSubtitles footerLinks">
                   Moderation
-                </a>
+                </Link>
               </li>
             </ul>
           </section>
@@ -131,6 +118,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               title="Github"
+              draggable="false"
             >
               <FiGithub className="faIcons" />
             </a>
@@ -140,6 +128,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               title="LinkedIn"
+              draggable="false"
             >
               <FaLinkedinIn className="faIcons" />
             </a>
@@ -149,6 +138,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               title="Behance"
+              draggable="false"
             >
               <FaBehance className="faIcons" />
             </a>
@@ -158,6 +148,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               title="Curriculum Vitae"
+              draggable="false"
             >
               <BsFiletypePdf className="faIcons" />
             </a>

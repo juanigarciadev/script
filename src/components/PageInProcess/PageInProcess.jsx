@@ -12,7 +12,7 @@ const PageInProcess = () => {
       <h3 className="subtitles">
         Page is under construction, please, be patient.
       </h3>
-      <Link to="/" className="subtitle noStyleAnchor">
+      <Link to="/" className="subtitle noStyleAnchor" draggable="false">
         <button className="btn secondary">Go to home</button>
       </Link>
     </div>

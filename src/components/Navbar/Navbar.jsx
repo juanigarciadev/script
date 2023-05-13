@@ -15,7 +15,7 @@ const Navbar = ({
     <div>
       <div className="navbarContainer prevent-select">
         <div className="navbar">
-          <Link to="/">
+          <Link to="/" draggable="false">
             <img
               src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination-full_jxvtga.png"
               className="full navbarLogo"
@@ -44,7 +44,7 @@ const Navbar = ({
             </Link>
           </nav>
           <div className="navbarOptionsContainer">
-            <Link to="/log-in" className="btn">
+            <Link to="/log-in" className="btn" draggable="false">
               Log In
             </Link>
             <CartWidgetContainer />
@@ -60,6 +60,7 @@ const Navbar = ({
               <Link
                 to="/products"
                 className="navLinksExpanded"
+                draggable="false"
                 onClick={() => setOpen(false)}
               >
                 All Products
@@ -67,6 +68,7 @@ const Navbar = ({
               <Link
                 to="/products/frontend"
                 className="navLinksExpanded"
+                draggable="false"
                 onClick={() => setOpen(false)}
               >
                 Frontend
@@ -74,6 +76,7 @@ const Navbar = ({
               <Link
                 to="/products/backend"
                 className="navLinksExpanded"
+                draggable="false"
                 onClick={() => setOpen(false)}
               >
                 Backend
