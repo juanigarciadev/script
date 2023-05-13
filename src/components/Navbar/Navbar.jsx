@@ -1,6 +1,7 @@
 import CartWidgetContainer from "../CartWidget/CartWidgetContainer";
 import { HiChevronUp } from "react-icons/hi";
-import { HiOutlineBars3BottomRight } from "react-icons/hi2";
+import { BsFillCollectionFill, BsQuestionCircleFill } from "react-icons/bs";
+import { RiContactsFill } from "react-icons/ri";
 import { Outlet, Link } from "react-router-dom";
 
 const Navbar = ({
@@ -10,6 +11,8 @@ const Navbar = ({
   dropdownRef,
   mobileNavbar,
   setMobileNavbar,
+  barsRef,
+  navToggledRef,
 }) => {
   return (
     <div>
@@ -48,8 +51,11 @@ const Navbar = ({
               Log In
             </Link>
             <CartWidgetContainer />
-            <HiOutlineBars3BottomRight
-              className="navbarToggler faIcons"
+            <img
+              src="https://res.cloudinary.com/diruiumfk/image/upload/v1683992248/bars_n3bbpi.png"
+              className="navbarToggler barsIcon"
+              alt="navbar toggler in mobile devices"
+              ref={barsRef}
               onClick={() => setMobileNavbar(!mobileNavbar)}
             />
           </div>
@@ -86,13 +92,14 @@ const Navbar = ({
         )}
 
         {mobileNavbar && (
-          <div className="mobileNavbarToggled">
+          <div className="mobileNavbarToggled" ref={navToggledRef}>
             <nav className="navLinksContainerToggled">
               <Link
                 to="/products"
                 className="navLinksToggled"
                 onClick={() => setMobileNavbar(false)}
               >
+                <BsFillCollectionFill />
                 Products
               </Link>
               <Link
@@ -100,6 +107,7 @@ const Navbar = ({
                 className="navLinksToggled"
                 onClick={() => setMobileNavbar(false)}
               >
+                <BsQuestionCircleFill />
                 FAQS
               </Link>
               <Link
@@ -107,6 +115,7 @@ const Navbar = ({
                 className="navLinksToggled"
                 onClick={() => setMobileNavbar(false)}
               >
+                <RiContactsFill />
                 Contact
               </Link>
             </nav>

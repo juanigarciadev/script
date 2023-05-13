@@ -78,6 +78,13 @@
   overflow: hidden;
 }
 
+.barsIcon {
+  filter: invert(1);
+  transform: scaleX(-1);
+  cursor: pointer;
+  width: 20px;
+}
+
 .mini {
   display: none;
 }
@@ -145,11 +152,20 @@
 .navLinksContainerToggled {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 20px;
 }
 
 .navLinksToggled {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  height: 40px;
+  gap: 10px;
+  padding-left: 35%;
+  &:hover {
+    background-color: #ff00c3;
+  }
 }
 
 .mobileNavbarToggled {

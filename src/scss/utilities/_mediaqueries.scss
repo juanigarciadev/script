@@ -75,11 +75,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
   .cartCounter {
     top: 22px;
-    right: 54px;
+    right: 68px;
   }
   .navbarToggler {
     display: block;
@@ -152,6 +152,9 @@
   }
   .cartControlButtons {
     padding: 0px 0px 20px 0px;
+  }
+  .faqWrapper {
+    width: 80vw;
   }
 }
 
