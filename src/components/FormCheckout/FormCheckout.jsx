@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ReturnButtonContainer from "../ReturnButton/ReturnButtonContainer";
 import { TextField } from "@mui/material";
 import { RiFileCopyLine } from "react-icons/ri";
+import { useState } from "react";
 
 const FormCheckout = ({
   cart,
@@ -11,7 +12,40 @@ const FormCheckout = ({
   errors,
   orderId,
   copy,
+  values,
 }) => {
+  const [showSubmitButton, setShowSubmitButton] = useState(false);
+
+  const handleFieldChange = (event) => {
+    handleChange(event);
+    validateFullFields();
+  };
+
+  const validateFullFields = () => {
+    const {
+      firstName,
+      lastName,
+      email,
+      confirmEmail,
+      country,
+      postalCode,
+      phone,
+    } = values;
+    if (
+      firstName &&
+      lastName &&
+      email &&
+      confirmEmail &&
+      country &&
+      postalCode &&
+      phone
+    ) {
+      setShowSubmitButton(true);
+    } else {
+      setShowSubmitButton(false);
+    }
+  };
+
   return (
     <>
       <div className="returnButtonCart">
@@ -41,6 +75,7 @@ const FormCheckout = ({
               onSubmit={handleSubmit}
               method="get"
               className="checkoutFieldsContainer"
+              autoComplete="off"
             >
               <div className="nameEmailForm">
                 <TextField
@@ -49,7 +84,7 @@ const FormCheckout = ({
                   variant="outlined"
                   name="firstName"
                   placeholder="First name"
-                  onChange={handleChange}
+                  onChange={handleFieldChange}
                   error={errors.firstName ? true : false}
                   helperText={errors.firstName}
                   sx={{ width: "302.5px" }}
@@ -69,7 +104,7 @@ const FormCheckout = ({
                   variant="outlined"
                   name="lastName"
                   placeholder="Last name"
-                  onChange={handleChange}
+                  onChange={handleFieldChange}
                   error={errors.lastName ? true : false}
                   helperText={errors.lastName}
                   sx={{ width: "302.5px" }}
@@ -87,7 +122,7 @@ const FormCheckout = ({
                 variant="outlined"
                 name="email"
                 placeholder="Email"
-                onChange={handleChange}
+                onChange={handleFieldChange}
                 error={errors.email ? true : false}
                 helperText={errors.email}
                 sx={{ width: "615px" }}
@@ -104,7 +139,7 @@ const FormCheckout = ({
                 variant="outlined"
                 name="confirmEmail"
                 placeholder="Confirm E-mail"
-                onChange={handleChange}
+                onChange={handleFieldChange}
                 error={errors.confirmEmail ? true : false}
                 helperText={errors.confirmEmail}
                 sx={{ width: "615px" }}
@@ -122,7 +157,7 @@ const FormCheckout = ({
                   variant="outlined"
                   name="country"
                   placeholder="Country"
-                  onChange={handleChange}
+                  onChange={handleFieldChange}
                   error={errors.country ? true : false}
                   helperText={errors.country}
                   sx={{ width: "302.5px" }}
@@ -139,7 +174,7 @@ const FormCheckout = ({
                   variant="outlined"
                   name="postalCode"
                   placeholder="Postal Code"
-                  onChange={handleChange}
+                  onChange={handleFieldChange}
                   error={errors.postalCode ? true : false}
                   helperText={errors.postalCode}
                   sx={{ width: "302.5px" }}
@@ -157,7 +192,7 @@ const FormCheckout = ({
                 variant="outlined"
                 name="phone"
                 placeholder="Phone"
-                onChange={handleChange}
+                onChange={handleFieldChange}
                 error={errors.phone ? true : false}
                 helperText={errors.phone}
                 sx={{ width: "615px" }}
@@ -168,16 +203,20 @@ const FormCheckout = ({
                   },
                 }}
               />
-              <button
-                type="submit"
-                value={
-                  cart.length > 0 ? "Checkout" : "You can't buy nothing itself"
-                }
-                disabled={cart.length === 0}
-                className="checkoutBtn btn secondary"
-              >
-                Checkout
-              </button>
+              {showSubmitButton && (
+                <button
+                  type="submit"
+                  value={
+                    cart.length > 0
+                      ? "Checkout"
+                      : "You can't buy nothing itself"
+                  }
+                  disabled={cart.length === 0}
+                  className="checkoutBtn btn secondary"
+                >
+                  Checkout
+                </button>
+              )}
             </form>
           </div>
           <div>

@@ -46,7 +46,7 @@ const FormCheckoutContainer = () => {
     clearCart();
   };
 
-  const { handleSubmit, handleChange, errors } = useFormik({
+  const { handleSubmit, handleChange, errors, values } = useFormik({
     initialValues: {
       firstName: "",
       lastName: "",
@@ -61,7 +61,6 @@ const FormCheckoutContainer = () => {
       firstName: Yup.string()
         .min(3, "Minimum 3 characters")
         .max(16, "Maximum 16 characters")
-        .matches("[a - zA - Z]", "This field must be letters")
         .required("This field is required"),
       lastName: Yup.string()
         .min(3, "Minimum 3 characters")
@@ -88,6 +87,8 @@ const FormCheckoutContainer = () => {
     validateOnChange: false,
   });
 
+  console.log(values);
+
   return (
     <FormCheckout
       getTotalPrice={getTotalPrice}
@@ -97,6 +98,7 @@ const FormCheckoutContainer = () => {
       orderId={orderId}
       cart={cart}
       copy={copy}
+      values={values}
     />
   );
 };
