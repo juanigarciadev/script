@@ -8,6 +8,11 @@
   overflow-x: hidden;
 }
 
+body {
+  scrollbar-gutter: auto;
+  width: 100vw;
+}
+
 @font-face {
   font-family: Roboto;
   src: url(../../fonts/Inter/Inter-Variable.ttf);
