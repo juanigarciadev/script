@@ -1,5 +1,5 @@
 import CartWidgetContainer from "../CartWidget/CartWidgetContainer";
-import { HiChevronUp } from "react-icons/hi";
+import { HiChevronDown } from "react-icons/hi";
 import { BsFillCollectionFill, BsQuestionCircleFill } from "react-icons/bs";
 import { RiContactsFill } from "react-icons/ri";
 import { Outlet, Link } from "react-router-dom";
@@ -13,6 +13,7 @@ const Navbar = ({
   setMobileNavbar,
   barsRef,
   navToggledRef,
+  navReset,
 }) => {
   return (
     <div>
@@ -37,7 +38,7 @@ const Navbar = ({
               onClick={() => setOpen(!open)}
             >
               Categories
-              <HiChevronUp />
+              <HiChevronDown />
             </p>
             <Link to="/faqs" className="navLinks">
               FAQS
@@ -67,7 +68,7 @@ const Navbar = ({
                 to="/products"
                 className="navLinksExpanded"
                 draggable="false"
-                onClick={() => setOpen(false)}
+                onClick={navReset}
               >
                 All Products
               </Link>
@@ -75,7 +76,7 @@ const Navbar = ({
                 to="/products/frontend"
                 className="navLinksExpanded"
                 draggable="false"
-                onClick={() => setOpen(false)}
+                onClick={navReset}
               >
                 Frontend
               </Link>
@@ -83,7 +84,7 @@ const Navbar = ({
                 to="/products/backend"
                 className="navLinksExpanded"
                 draggable="false"
-                onClick={() => setOpen(false)}
+                onClick={navReset}
               >
                 Backend
               </Link>

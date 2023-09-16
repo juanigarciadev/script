@@ -1,4 +1,5 @@
 .itemList {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +47,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 30px;
+  margin: 100px 0px;
 }
 
 .productCard {
@@ -145,8 +146,8 @@
 }
 
 .filterProds {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +157,7 @@
   backdrop-filter: blur(5px);
   height: 40px;
   width: 300px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 .filterBtn:hover {
   text-decoration: underline;

@@ -8,15 +8,13 @@
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  width: 95vw;
+  width: 100vw;
   height: 5rem;
   background-color: rgba(18, 18, 18, 0.8);
   color: white;
-  margin-top: 90vh;
-  padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 4rem;
   font-family: Roboto;
   z-index: 1;
-  border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   backdrop-filter: blur(5px);
   z-index: 100;
@@ -70,7 +68,7 @@
   line-height: 18px;
   font-size: 15px;
   top: 22px;
-  right: 18px;
+  right: 50px;
   background-color: #ff00c3;
   height: 18px;
   width: 18px;
@@ -105,7 +103,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 100px;
+  top: 80px;
   right: 49vw;
   height: 100px;
   width: 200px;
@@ -141,7 +139,7 @@
   right: 20px;
   width: 300px;
   height: 85vh;
-  margin-top: 10px;
+  margin-top: 80px;
   border-radius: 20px;
   background-color: rgba(18, 18, 18, 0.8);
   backdrop-filter: blur(5px);

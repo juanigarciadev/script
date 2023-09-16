@@ -8,7 +8,7 @@ const Register = () => {
   return (
     <section className="loginContainer">
       <div className="login">
-        <div to="/" className=" goBackHome">
+        <div to="/" className="goBackHome">
           <ReturnButtonContainer />
         </div>
         <h1 className="loginTitle">Create an account</h1>

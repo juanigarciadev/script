@@ -20,6 +20,10 @@ const NavbarContainer = () => {
     }
   });
 
+  function navReset() {
+    window.scrollTo({ top: 0 });
+    setOpen(false);
+  }
   return (
     <Navbar
       open={open}
@@ -30,6 +34,7 @@ const NavbarContainer = () => {
       setMobileNavbar={setMobileNavbar}
       barsRef={barsRef}
       navToggledRef={navToggledRef}
+      navReset={navReset}
     />
   );
 };

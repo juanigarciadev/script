@@ -59,9 +59,6 @@
 }
 
 @media screen and (max-width: 750px) {
-  .navbar {
-    margin-top: 87vh;
-  }
   .navLinks {
     display: none;
   }
@@ -79,7 +76,7 @@
   }
   .cartCounter {
     top: 22px;
-    right: 68px;
+    right: 100px;
   }
   .navbarToggler {
     display: block;
