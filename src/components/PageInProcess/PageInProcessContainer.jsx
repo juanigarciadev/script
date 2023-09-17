@@ -3,7 +3,7 @@ import PageInProcess from "./PageInProcess";
 
 const PageInProcessContainer = () => {
   useEffect(() => {
-    document.title = "Working... | BEYOND IMAGINATION";
+    document.title = "Working... | </script>";
   }, []);
   return <PageInProcess />;
 };

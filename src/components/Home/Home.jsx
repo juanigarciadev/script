@@ -6,7 +6,7 @@ import ItemListContainer from "../ItemList/ItemListContainer";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "BEYOND IMAGINATION";
+    document.title = "</script>";
   }, []);
   return (
     <>

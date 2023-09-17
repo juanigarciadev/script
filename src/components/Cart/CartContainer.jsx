@@ -11,7 +11,7 @@ const CartContainer = () => {
     useContext(CartContext);
 
   useEffect(() => {
-    document.title = "Cart | BEYOND IMAGINATION";
+    document.title = "Cart | </script>";
   }, []);
 
   let cartTotalPrice = getTotalPrice();

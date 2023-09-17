@@ -10,7 +10,7 @@ const ItemListContainer = () => {
 
   //useEffect para cambiar el titulo de la página
   useEffect(() => {
-    document.title = "Products | BEYOND IMAGINATION";
+    document.title = "Products | </script>";
   }, []);
 
   //useEffect para filtrar los productos según su categoría (frontend, backend o todos)

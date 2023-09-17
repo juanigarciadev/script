@@ -21,7 +21,7 @@ const FormCheckoutContainer = () => {
   const [value, copy] = useCopyToClipboard();
 
   useEffect(() => {
-    document.title = "Checkout | BEYOND IMAGINATION";
+    document.title = "Checkout | </script>";
   }, []);
 
   const checkout = (data) => {
