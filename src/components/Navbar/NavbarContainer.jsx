@@ -23,6 +23,7 @@ const NavbarContainer = () => {
   function navReset() {
     window.scrollTo({ top: 0 });
     setOpen(false);
+    setMobileNavbar(false);
   }
   return (
     <Navbar
