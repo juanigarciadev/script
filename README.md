@@ -1,4 +1,4 @@
-!["BEYOND IMAGINATION Logo"](https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination-full_jxvtga.png)
+# </script>
 
 ## Descripción del proyecto:
 
