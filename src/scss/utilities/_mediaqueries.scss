@@ -42,6 +42,7 @@
   }
   .subscribeNewsletter {
     flex-direction: column;
+    width: 100%;
   }
   .newsletterBtn {
     width: 17.3rem;
@@ -108,6 +109,9 @@
   .divider {
     display: none;
   }
+  .footerDivs {
+    width: 100%;
+  }
   /* width */
   ::-webkit-scrollbar {
     width: 0px;
@@ -155,6 +159,12 @@
   }
   .faqWrapper {
     width: 80vw;
+  }
+  .newsletterBtn {
+    width: 100%;
+  }
+  #newsletter {
+    width: 100%;
   }
 }
 

@@ -8,7 +8,7 @@ const Counter = () => {
     <ScrollTrigger onEnter={() => setCounterOn(true)}>
       <section className="counterContainer">
         <div>
-          <p className="smallSubtitles">more than</p>
+          <p className="smallSubtitles"  style={{color: 'white'}}>more than</p>
           <h3 className="counterNumber">
             {counterOn && (
               <CountUp
@@ -19,11 +19,11 @@ const Counter = () => {
                 className="counterNumber"
               />
             )}
-            +<p className="smallSubtitles">Students</p>
+            +<p className="smallSubtitles" style={{color: 'white'}}>Students</p>
           </h3>
         </div>
         <div>
-          <p className="smallSubtitles">more than</p>
+          <p className="smallSubtitles"  style={{color: 'white'}}>more than</p>
           <h3 className="counterNumber">
             {counterOn && (
               <CountUp
@@ -34,11 +34,11 @@ const Counter = () => {
                 className="counterNumber"
               />
             )}
-            +<p className="smallSubtitles">Courses</p>
+            +<p className="smallSubtitles"  style={{color: 'white'}}>Courses</p>
           </h3>
         </div>
         <div>
-          <p className="smallSubtitles">more than</p>
+          <p className="smallSubtitles"  style={{color: 'white'}}>more than</p>
           <h3 className="counterNumber">
             {counterOn && (
               <CountUp
@@ -49,7 +49,7 @@ const Counter = () => {
                 className="counterNumber"
               />
             )}
-            %<p className="smallSubtitles">Completion</p>
+            %<p className="smallSubtitles"  style={{color: 'white'}}>Completion</p>
           </h3>
         </div>
       </section>
