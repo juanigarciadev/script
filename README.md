@@ -1,16 +1,16 @@
 # </script>
 
-## Descripción del proyecto:
+## Project description:
 
-BEYOND IMAGINATION nace del crecimiento del mundo de la programación buscando ser una academia de aprendizaje online competente tanto en nivel como así también en precios. El proyecto cuenta con un sistema de compra funcional con restado de stock en tiempo real.
+</script> was born from the growth of the world of programming, seeking to be a competent online learning academy both in level and in prices. The project has a functional purchasing system with stock subtraction in real time.
 
 <p align="center">
 ══════════════════════════════════════════════════════
 </p>
 
-## Clonado rápido de repositorio:
+## Fast Repository Cloning:
 
-Para clonar rápidamente el repositorio ubíquese con su consola de preferencia (Powershell, Git Bash, etc) en la carpeta donde quiera que se clone el proyecto completo, una vez ubicado, copie y pegue el siguiente comando dentro de la consola y presione ENTER.
+To quickly clone the repository, use your preferred console (Powershell, Git Bash, etc.) to locate the folder where you want the entire project to be cloned. Once located, copy and paste the following command into the console and press ENTER.
 
 ```
 git clone https://github.com/juanigarciadev/first-react-app
@@ -20,33 +20,32 @@ git clone https://github.com/juanigarciadev/first-react-app
 ══════════════════════════════════════════════════════
 </p>
 
-## Dependencias usadas en el proyecto:
+## Dependencies used in the project:
 
-- [Material UI](https://mui.com/) (usado para la rápida aplicacion de componentes tales como un desplegable para la sección de FAQS o para los campos de los formularios)
+- [Material UI](https://mui.com/) (used for quick application of components such as a dropdown for the FAQS section or for form fields)
 
-- [Firebase](https://firebase.google.com/) (usado para la base de datos del e-commerce)
+- [Firebase](https://firebase.google.com/) (used for e-commerce database)
 
-- [Formik](https://formik.org/) (usado para la creacion de formularios)
+- [Formik](https://formik.org/) (used for creating forms)
 
-- [Yup](https://www.npmjs.com/package/yup) (usado para la validación de los formularios)
+- [Yup](https://www.npmjs.com/package/yup) (used for form validation)
 
-- [React Icons](https://react-icons.github.io/react-icons) (usado para agregar los iconos que se necesiten en el proyecto)
+- [React Icons](https://react-icons.github.io/react-icons) (used to add the icons needed in the project)
 
-- [React Countup](https://www.npmjs.com/package/react-countup) (usado para hacer el contador de usuarios, cursos y porcentaje de completado)
+- [React Countup](https://www.npmjs.com/package/react-countup) (used to count users, courses and completion percentage)
 
-- [Toastify]() (usado para notificarle al usuario cuando algo fue agregado al carrito)
+- [Toastify]() (used to notify the user when something was added to the cart)
 
-- [SASS]() (usado para estilar con CSS de una manera más cómoda y sectorizada permitiendo así también la anidación de estilos)
+- [SASS]() (used to style with CSS in a more comfortable and sectored way, also allowing the nesting of styles)
 
-### Instalación de dependencias e iniciado de proyecto:
+### Installing dependencies and starting the project:
 
-Para instalar estas dependencias y que el proyecto funcione correctamente coloque en su consola de preferencia estando ubicado/a en la carpeta raíz del proyecto:
-
+To install these dependencies and for the project to work correctly, place in your preferred console, located in the root folder of the project:
 ```
 npm install
 ```
 
-Una vez instaladas todas las dependencias, copie y pegue el siguiente comando en su consola de preferencia estando ubicado/a en la carpeta raíz del proyecto:
+Once all dependencies are installed, copy and paste the following command into your preferred console, located in the root folder of the project:
 
 ```
 npm start
@@ -56,7 +55,7 @@ npm start
 ══════════════════════════════════════════════════════
 </p>
 
-### Para usar este proyecto con productos propios se necesitan variables de entorno, para ello, se deberá crear el archivo .env en la ruta raíz del proyecto y asignarle lo siguiente:
+### To use this project with your own products, you need environment variables. To do this, you must create the .env file in the root path of the project and assign the following to it:
 
 - REACT_APP_APIKEY=
 - REACT_APP_AUTHDOMAIN=
@@ -69,20 +68,20 @@ npm start
 ══════════════════════════════════════════════════════
 </p>
 
-### Sintaxis para la correcta creación de productos:
+### Syntax for correct product creation:
 
-Los productos deberán contener las siguientes propiedades creandolas en Firebase dentro de una colección llamada "products". La ID del documento (producto) dentro de la colección tiene que ser generada automáticamente por Firebase.
+The products must contain the following properties by creating them in Firebase within a collection called "products". The ID of the document (product) within the collection has to be automatically generated by Firebase.
 
-- title: (string, nombre del producto, se admiten mayúsculas).
-- category: (string, frontend o backend, no se admiten mayusculas).
-- img: (string, url de la foto del producto, preferentemente subida a [Cloudinary](https://cloudinary.com/)).
-- description: (string, descripción oficial del producto).
-- shortDescription: (string, misma descripción que la primera pero acortada para su vista en el carrito).
-- contains: (array, mínimo y máximo 5 temas o características del producto).
-- new: (boolean, en true saldría una etiqueta de "New" en la card del producto, en false no saldría nada).
-- price: (number, precio del producto)
-- stock: (number, stock disponible del producto)
-
+- title: (string, product name, capital letters supported).
+- category: (string, frontend or backend, capitalization is not supported).
+- img: (string, url of the product photo, preferably uploaded to [Cloudinary](https://cloudinary.com/)).
+- description: (string, official product description).
+- shortDescription: (string, same description as the first but shortened for viewing in the cart).
+- contains: (array, minimum and maximum 5 themes or product characteristics).
+- new: (boolean, in true a "New" label would appear on the product card, in false nothing would appear).
+- price: (number, product price)
+- stock: (number, available stock of the product)
+  
 <p align="center">
  <img width="50px" src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination_zfxqv7.png" alt="BEYOND IMAGINATION Logo Mini"/>
 </p>
