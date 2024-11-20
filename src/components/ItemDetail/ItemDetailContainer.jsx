@@ -16,8 +16,8 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     document.title =
       product.title === undefined
-        ? "Loading | </script>"
-        : product.title + " | </script>";
+        ? "Loading | DevBoost"
+        : product.title + " | DevBoost";
   }, [product.title]);
 
   useEffect(() => {

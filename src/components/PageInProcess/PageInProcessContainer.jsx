@@ -3,7 +3,7 @@ import PageInProcess from "./PageInProcess";
 
 const PageInProcessContainer = () => {
   useEffect(() => {
-    document.title = "Working... | </script>";
+    document.title = "Working... | DevBoost";
   }, []);
   return <PageInProcess />;
 };

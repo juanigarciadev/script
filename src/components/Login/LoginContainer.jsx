@@ -3,7 +3,7 @@ import Login from "./Login";
 
 const LoginContainer = () => {
   useEffect(() => {
-    document.title = "Log In | </script>";
+    document.title = "Log In | DevBoost";
   }, []);
   return <Login />;
 };

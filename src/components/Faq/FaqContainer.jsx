@@ -3,7 +3,7 @@ import Faq from "./Faq";
 
 const FaqContainer = () => {
   useEffect(() => {
-    document.title = "FAQS | </script>";
+    document.title = "FAQS | DevBoost";
   }, []);
   return <Faq />;
 };

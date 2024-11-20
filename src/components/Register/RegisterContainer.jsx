@@ -3,7 +3,7 @@ import Register from "./Register";
 
 const RegisterContainer = () => {
   useEffect(() => {
-    document.title = "Sign Up | </script>";
+    document.title = "Sign Up | DevBoost";
   }, []);
   return <Register />;
 };

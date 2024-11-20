@@ -6,7 +6,7 @@ import ItemListContainer from "../ItemList/ItemListContainer";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "</script>";
+    document.title = "DevBoost";
   }, []);
   return (
     <>
