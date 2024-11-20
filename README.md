@@ -1,4 +1,4 @@
-# </script>
+# DevBoost
 
 ## Project description:
 
@@ -13,7 +13,7 @@
 To quickly clone the repository, use your preferred console (Powershell, Git Bash, etc.) to locate the folder where you want the entire project to be cloned. Once located, copy and paste the following command into the console and press ENTER.
 
 ```
-git clone https://github.com/juanigarciadev/first-react-app
+git clone https://github.com/juanigarciadev/DevBoost
 ```
 
 <p align="center">
@@ -34,9 +34,9 @@ git clone https://github.com/juanigarciadev/first-react-app
 
 - [React Countup](https://www.npmjs.com/package/react-countup) (used to count users, courses and completion percentage)
 
-- [Toastify]() (used to notify the user when something was added to the cart)
+- [Toastify](https://apvarun.github.io/toastify-js/) (used to notify the user when something was added to the cart)
 
-- [SASS]() (used to style with CSS in a more comfortable and sectored way, also allowing the nesting of styles)
+- [SASS](https://sass-lang.com/) (used to style with CSS in a more comfortable and sectored way, also allowing the nesting of styles)
 
 ### Installing dependencies and starting the project:
 
