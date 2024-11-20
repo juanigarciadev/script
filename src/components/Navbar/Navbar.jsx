@@ -19,8 +19,8 @@ const Navbar = ({
     <div>
       <div className="navbarContainer prevent-select">
         <div className="navbar">
-          <Link to="/" className="scriptLogo" draggable="false">
-            <h1 className="scriptLogo">{'</script>'}</h1>
+          <Link to="/" className="devBoostLogo" draggable="false">
+            <h1 className="devBoostLogo">DevBoost</h1>
           </Link>
           <nav className="navLinksContainer">
             <p
