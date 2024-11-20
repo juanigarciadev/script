@@ -2,7 +2,7 @@
 
 ## Project description:
 
-</script> was born from the growth of the world of programming, seeking to be a competent online learning academy both in level and in prices. The project has a functional purchasing system with stock subtraction in real time.
+DevBoost was born from the growth of the world of programming, seeking to be a competent online learning academy both in level and in prices. The project has a functional purchasing system with stock subtraction in real time.
 
 <p align="center">
 ══════════════════════════════════════════════════════
